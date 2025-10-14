@@ -4,23 +4,361 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/header.css">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/items.css">
     <link rel="stylesheet" href="styles/footer.css">
     <title>Aler</title>
 </head>
 <body>
-<header></header>
+<header class="header">
+    <div class="header-top">
+        <div class="container"><p>ALEKO - разработка и производство компонентов СКУД в России с 1993 года</p>
+            <p class="header-top__address">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M7.50735 14.7559C7.50735 14.7559 2.66602 10.6786 2.66602 6.66659C2.66602 5.2521 3.22792 3.89554 4.22811 2.89535C5.22831 1.89516 6.58486 1.33325 7.99935 1.33325C9.41384 1.33325 10.7704 1.89516 11.7706 2.89535C12.7708 3.89554 13.3327 5.2521 13.3327 6.66659C13.3327 10.6786 8.49135 14.7559 8.49135 14.7559C8.22202 15.0039 7.77868 15.0013 7.50735 14.7559ZM7.99935 8.99992C8.30577 8.99992 8.60918 8.93957 8.89228 8.8223C9.17537 8.70504 9.43259 8.53317 9.64926 8.3165C9.86593 8.09983 10.0378 7.84261 10.1551 7.55951C10.2723 7.27642 10.3327 6.973 10.3327 6.66659C10.3327 6.36017 10.2723 6.05675 10.1551 5.77366C10.0378 5.49056 9.86593 5.23334 9.64926 5.01667C9.43259 4.8 9.17537 4.62813 8.89228 4.51087C8.60918 4.39361 8.30577 4.33325 7.99935 4.33325C7.38051 4.33325 6.78702 4.57908 6.34943 5.01667C5.91185 5.45425 5.66602 6.04775 5.66602 6.66659C5.66602 7.28542 5.91185 7.87892 6.34943 8.3165C6.78702 8.75409 7.38051 8.99992 7.99935 8.99992Z"
+                          fill="#FDFEFE"/>
+                </svg>
+                г. Москва, 1-я ул. Энтузиастов, д. 3
+            </p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="header-info">
+            <img src="assets/images/logo.svg" alt="">
+            <button class="header-btn">Каталог</button>
+            <input class="header-search" type="search" placeholder="Поиск по сайту">
+            <a class="header-tel" href="tel:+7 495 145-82-84">+7 495 145-82-84</a>
+            <a class="header-statistic" href="">Сравнение</a>
+        </div>
+        <ul class="header-nav">
+            <li><a href="">Мастер подбора</a></li>
+            <li><a href="">О компании</a></li>
+            <li><a href="">Новости</a></li>
+            <li><a href="">Дилеры</a></li>
+            <li><a href="">Техподдержка</a></li>
+            <li><a href="">Проектировщикам</a></li>
+            <li><a href="">Информация</a></li>
+            <li><a href="">Контакты</a></li>
+        </ul>
+    </div>
+</header>
 <main>
     <section class="main">
         <div class="container">
-            <h1 class="main-title">Разработка и производство в России электромагнитных, электромеханических замков и взрывозащищенного
-            оборудования</h1></div>
+            <div class="main-sliders">
+                <div class="first-slider">
+                    <img src="assets/images/main-1.png" alt="">
+                </div>
+                <div class="second-slider">
+
+                </div>
+            </div>
+            <h1 class="main-title">Разработка и производство в России электромагнитных, электромеханических замков и
+                взрывозащищенного
+                оборудования</h1>
+        </div>
+    </section>
+    <section class="catalog">
+        <div class="container">
+            <h2 class="title">Каталог продукции</h2>
+            <div class="catalog-list">
+                <div><a class="catalog-link" href="">Электромагнитные замки</a></div>
+                <div><a class="catalog-link" href="">Электромеханические замки</a></div>
+                <div><a class="catalog-link" href="">Взрывозащищенное оборудование</a></div>
+                <div><a class="catalog-link" href="">Холодостойкое оборудование</a></div>
+                <div><a class="catalog-link" href="">Элементы монтажа для замков</a></div>
+                <div>
+                    <div><a class="catalog-link" href="">Прочее оборудование</a></div>
+                    <div><a class="catalog-link" href="">Запасные части и принадлежности (ЗИП)</a></div>
+                    <div><a class="catalog-link" href="">Продукция снятая с производства</a></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="items">
+        <div class="container">
+            <h2 class="title">Новинки</h2>
+            <ul class="items-list">
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+            </ul>
+            <button class="items-btn">Показать ещё</button>
+        </div>
+    </section>
+    <section class="popular">
+        <div class="container">
+            <h2 class="title">Популярные товары</h2>
+            <ul class="items-list">
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+                <li>
+                    <img class="items-img" src="assets/images/new-1.png" alt="">
+                    <h3 class="items-title">L-уголок AL-50FC</h3>
+                    <div class="items-price">
+                        <span>Розничная цена:</span>
+                        <span>2 020 руб.</span>
+                    </div>
+                    <div class="items-statistic">
+                        <a href="">Подробнее</a>
+                        <div><img src="assets/images/eye.svg" alt="">
+                            <img src="assets/images/statistic.svg" alt=""></div>
+                    </div>
+                </li>
+            </ul>
+            <button class="items-btn">Показать ещё</button>
+        </div>
     </section>
     <section class="info">
         <div class="container">
-            <h2 class="info-title">ALEKO — лидер по производству электромагнитных, электромеханических замков и взрывозащищённого
-            оборудования.
-            Работаем в России с 1993 года</h2>
+            <h2 class="info-title">ALEKO — лидер по производству электромагнитных, электромеханических замков
+                и взрывозащищённого
+                оборудования.
+                Работаем в России с 1993 года</h2>
             <ul class="info-list">
                 <li>
                     <span>100%</span>
@@ -52,21 +390,39 @@
     <section class="about">
         <div class="container">
             <p class="about-desc">Компания «АЛЕКО» — российский разработчик и производитель исполнительных устройств
-            для систем контроля
-            и управления доступом - электромагнитных и электромеханических замков широкого спектра применения, а также
-            холодостойкого и взрывозащищённого оборудования под товарными знаками Aler и ALeko.</p>
+                для систем контроля
+                и управления доступом - электромагнитных и электромеханических замков широкого спектра применения,
+                а также
+                холодостойкого и взрывозащищённого оборудования под товарными знаками Aler и ALeko.</p>
             <ul class="about-list">
                 <li>
-                    <h3>1993 г.</h3>
-                    <p>История компании начинается в 1993 году с выпуска легендарной серии премиальных электромагнитных замков.</p>
+                    <h3>
+                        <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13.2861 16.4276L11.3833 16.4276L11.3833 7.01831C11.3833 4.929 11.0134 2.3852 6.70119 2.3852C1.85725 2.27947 2.01023 5.98892 2.01023 6.8984L1.90567 16.4279L0.000620172 16.4287C0.000620172 16.4287 -3.21505e-07 9.06269 -4.73238e-07 5.58634C-6.2497e-07 2.11 3.20879 0.000379422 6.70119 0.000379269C10.1936 0.000379116 13.2862 2.3852 13.2862 5.33158L13.2861 16.4276Z" fill="#10367D" />
+                        <path d="M5.71385 6.57239L7.61667 6.57239L7.61667 15.9817C7.61667 18.071 7.98655 20.6148 12.2988 20.6148C17.1427 20.7205 16.9898 17.0111 16.9898 16.1016L17.0943 6.57208L18.9994 6.57129C18.9994 6.57129 19 13.9373 19 17.4137C19 20.89 15.7912 22.9996 12.2988 22.9996C8.80641 22.9996 5.71385 20.6148 5.71385 17.6684L5.71385 6.57239Z" fill="#10367D" />
+                    </svg>1993 г.</h3>
+                    <p>История компании начинается в 1993 году с выпуска легендарной серии премиальных электромагнитных
+                        замков.</p>
                 </li>
                 <li>
-                    <h3>2012 г.</h3>
-                    <p>В 2012 году разработан и запущен в серийное производство первый в России взрывозащищенный электромагнитный замок по уникальной запатентованной технологии.</p>
+                    <h3>
+                        <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2861 16.4276L11.3833 16.4276L11.3833 7.01831C11.3833 4.929 11.0134 2.3852 6.70119 2.3852C1.85725 2.27947 2.01023 5.98892 2.01023 6.8984L1.90567 16.4279L0.000620172 16.4287C0.000620172 16.4287 -3.21505e-07 9.06269 -4.73238e-07 5.58634C-6.2497e-07 2.11 3.20879 0.000379422 6.70119 0.000379269C10.1936 0.000379116 13.2862 2.3852 13.2862 5.33158L13.2861 16.4276Z" fill="#508FFF" />
+                            <path d="M5.71385 6.57337L7.61667 6.57337L7.61667 15.9827C7.61667 18.072 7.98655 20.6158 12.2988 20.6158C17.1427 20.7215 16.9898 17.0121 16.9898 16.1026L17.0943 6.57306L18.9994 6.57227C18.9994 6.57227 19 13.9383 19 17.4146C19 20.891 15.7912 23.0006 12.2988 23.0006C8.80641 23.0006 5.71385 20.6158 5.71385 17.6694L5.71385 6.57337Z" fill="#508FFF" />
+                        </svg>2012 г.</h3>
+                    <p>В 2012 году разработан и запущен в серийное производство первый в России взрывозащищенный
+                        электромагнитный замок по уникальной запатентованной технологии.</p>
                 </li>
                 <li>
-                    <h3>2024 г.</h3>
-                    <p>В 2024 году — электромеханический замок. Электромеханические замки ALeko не уступают по техническим характеристикам и качеству продукции известного мирового концерна Assa Abloy и произведены полностью от конструкторских разработок до серийного выпуска в России на собственном заводе в Кимрах Тверской области.</p>
+                    <h3>
+                        <svg width="19" height="23" viewBox="0 0 19 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.2861 16.4276L11.3833 16.4276L11.3833 7.01831C11.3833 4.929 11.0134 2.3852 6.70119 2.3852C1.85725 2.27947 2.01023 5.98892 2.01023 6.8984L1.90567 16.4279L0.000620172 16.4287C0.000620172 16.4287 -3.21505e-07 9.06269 -4.73238e-07 5.58634C-6.2497e-07 2.11 3.20879 0.000379422 6.70119 0.000379269C10.1936 0.000379116 13.2862 2.3852 13.2862 5.33158L13.2861 16.4276Z" fill="#DC1818" />
+                            <path d="M5.71385 6.57337L7.61667 6.57337L7.61667 15.9827C7.61667 18.072 7.98655 20.6158 12.2988 20.6158C17.1427 20.7215 16.9898 17.0121 16.9898 16.1026L17.0943 6.57306L18.9994 6.57227C18.9994 6.57227 19 13.9383 19 17.4146C19 20.891 15.7912 23.0006 12.2988 23.0006C8.80641 23.0006 5.71385 20.6158 5.71385 17.6694L5.71385 6.57337Z" fill="#DC1818" />
+                        </svg>2024 г.</h3>
+                    <p>В 2024 году — электромеханический замок. Электромеханические замки ALeko не уступают
+                        по техническим характеристикам и качеству продукции известного мирового концерна Assa Abloy
+                        и произведены полностью от конструкторских разработок до серийного выпуска в России
+                        на собственном заводе в Кимрах Тверской области.</p>
                 </li>
             </ul>
             <video src=""></video>
@@ -157,11 +513,11 @@
                     <p>Взрывозащищенные замки</p>
                     <button>Скачать</button>
                 </li>
-<!--                <li>-->
-<!--                    <img src="assets/images/info-6.png" alt="">-->
-<!--                    <p>Электромеханические замки</p>-->
-<!--                    <button>Скачать</button>-->
-<!--                </li>-->
+                <!--                <li>-->
+                <!--                    <img src="assets/images/info-6.png" alt="">-->
+                <!--                    <p>Электромеханические замки</p>-->
+                <!--                    <button>Скачать</button>-->
+                <!--                </li>-->
                 <li>
                     <img src="assets/images/info-7.png" alt="">
                     <p>Монтажные комплекты для взрывозащищенных замков</p>
