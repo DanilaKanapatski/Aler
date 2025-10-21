@@ -1,0 +1,30 @@
+.comparison-desc {
+    margin-top: 25px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 135%;
+}
+
+.comparison-desc a {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+.comparison {
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 1492px) {
+
+}
+
+@media screen and (max-width: 768px) {
+    .comparison-desc {
+        margin-top: 7px;
+        font-size: 16px;
+    }
+
+    .comparison {
+        margin-bottom: 50px;
+    }
+}
