@@ -1,0 +1,72 @@
+/*dealers*/
+
+.dealers {
+    margin-bottom: 100px;
+}
+
+.dealers-list {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.dealers-list li {
+    /*box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);*/
+    border: 1px solid var(--gray-shape);
+    border-radius: 15px;
+    max-width: 484px;
+    width: 100%;
+    padding-bottom: 25px;
+}
+
+.dealers-list li div {
+    padding: 0 25px;
+}
+
+.dealers-list h3 {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.35;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.dealers-list h3::after {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 1px;
+    left: 0;
+    bottom: 0;
+    background: var(--gray-shape);
+}
+
+.dealers-list a {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.35;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.dealers-list li div a:nth-child(2) {
+    position: relative;
+}
+
+.dealers-list li div a:nth-child(2)::after {
+    position: absolute;
+    content: url("../assets/images/link.svg");
+    right: 0;
+    top: 0;
+}
+
+.dealers-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 231px;
+}

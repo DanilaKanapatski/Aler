@@ -6,6 +6,7 @@
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 ul {
@@ -14,6 +15,8 @@ ul {
 
 button {
     border: none;
+    background: none;
+    cursor: pointer;
 }
 
 input {
@@ -85,4 +88,49 @@ body {
     font-weight: 500;
     font-size: 16px;
     color: var(--gray-text);
+}
+
+.links {
+    margin-top: 40px;
+    margin-bottom: 35px;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--gray-text);
+}
+
+@media screen and (max-width: 1492px) {
+    .container {
+        max-width: 1180px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        max-width: 768px;
+        padding: 0 15px;
+    }
+
+    .links {
+        margin-top: 15px;
+        margin-bottom: 20px;
+        gap: 10px;
+        font-size: 12px;
+    }
+
+    .title {
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 130%;
+        text-shadow: 0 20px 13px 0 rgba(22, 22, 22, 0.04), 0 100px 80px 0 rgba(22, 22, 22, 0.07);
+    }
+
+    .text {
+        font-size: 12px;
+    }
+
+
 }

@@ -84,3 +84,30 @@
     text-align: center;
     color: var(--black-text);
 }
+
+@media screen and (max-width: 1492px) {
+
+    .header-info {
+        padding: 18px 0 28px;
+        gap: 20px;
+    }
+
+    .header-info a {
+        width: 228px;
+    }
+
+    .header-info img {
+        width: 100%;
+    }
+
+    .header-search {
+        width: 425px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        display: none;
+    }
+}

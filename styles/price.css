@@ -1,0 +1,54 @@
+/*price*/
+
+.price {
+    margin-top: 35px;
+    margin-bottom: 100px;
+}
+
+.price-content {
+    padding: 17px;
+    border-radius: 10px;
+    width: 358px;
+    background: var(--gray-form);
+    display: flex;
+    gap: 17px;
+    align-items: start;
+    transition: all 0.3s ease;
+}
+
+.price-content:hover {
+    background: var(--blue);
+}
+
+.price-content:hover p {
+    color: var(--white);
+}
+
+.price-content:hover a {
+    color: var(--white);
+}
+
+.price-content:hover svg path{
+    stroke: var(--white);
+    fill: var(--white);
+}
+
+.price-content p {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.3;
+    transition: all 0.3s ease;
+
+}
+
+.price-content a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}

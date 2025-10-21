@@ -1,0 +1,261 @@
+.info {
+    margin-top: 40px;
+}
+
+/*team*/
+
+.team {
+    margin-top: 100px;
+}
+
+.team-wrapper {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.team-subtitle {
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.3;
+}
+
+.team-content {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team-block {
+    border: 1px solid #d9d9d9;
+    max-width: 736px;
+    width: 100%;
+    display: flex;
+    gap: 30px;
+}
+
+.team-block__info {
+    margin-top: 30px;
+}
+
+.team-block__info p:first-child {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.3;
+}
+
+.team-block__info p:nth-child(2) {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.3;
+    margin-top: 10px;
+}
+
+.team-block__info a:first-child {
+    margin-top: 20px;
+}
+
+.team-block__info a {
+    font-weight: 600;
+    font-size: 20px;
+    color: #000;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+    /*awards*/
+
+.awards {
+    margin-top: 100px;
+}
+
+/*articles*/
+
+.articles {
+    margin-top: 100px;
+}
+
+.articles-list {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.articles-list li {
+    border: 1px solid var(--gray-shape);
+    border-radius: 15px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.articles-list li p {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.35;
+    margin-top: 15px;
+    margin-bottom: 12px;
+    padding: 0 14px 0 15px;
+}
+
+.articles-list li a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    text-decoration: underline;
+    color: var(--black-text);
+    padding-left: 15px;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    margin-top: auto;
+}
+
+    /*details*/
+
+.details {
+    margin-top: 100px;
+}
+
+.details-list {
+    margin-top: 41px;
+    display: flex;
+    flex-direction: column;
+}
+
+.details-list li {
+    display: flex;
+    /*justify-content: space-between;*/
+    padding: 17px 30px;
+}
+
+.details-list li:nth-child(odd) {
+    background: var(--gray-shape-2);
+}
+
+.details-list li span:first-child {
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #000;
+    width: 50%;
+}
+
+.details-list li span:last-child {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.3;
+    color: #000;
+    width: 50%;
+}
+
+@media screen and (max-width: 1492px) {
+
+    .team {
+        margin-top: 100px;
+    }
+
+    .team-wrapper {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .team-subtitle {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .team-block {
+        max-width: 580px;
+        gap: 20px;
+    }
+
+    .team-block img {
+        width: 280px;
+    }
+
+    .team-block__info {
+        margin-top: 20px;
+    }
+
+    .team-block__info p:first-child {
+        font-size: 18px;
+    }
+
+    .team-block__info p:nth-child(2) {
+        font-size: 16px;
+        margin-top: 7px;
+    }
+
+    .team-block__info a {
+        font-size: 16px;
+        margin-top: 13px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .team {
+        margin-top: 100px;
+    }
+
+    .team-wrapper {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .team-subtitle {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 1.3;
+    }
+
+    .team-content {
+        margin-top: 30px;
+        gap: 25px;
+    }
+
+    .team-block {
+        border: none;
+        max-width: none;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .team-block__info {
+        margin-top: 0;
+    }
+
+    .team-block__info p:first-child {
+        font-size: 16px;
+    }
+
+    .team-block__info p:nth-child(2) {
+        font-size: 14px;
+        margin-top: 3px;
+    }
+
+    .team-block__info a:first-child {
+        margin-top: 12px;
+    }
+
+    .team-block__info a {
+        font-size: 14px;
+        margin-top: 10px;
+        gap: 5px;
+    }
+
+    .team-block__info a svg {
+        width: 17px;
+        height: 17px    ;
+    }
+}

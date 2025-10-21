@@ -373,7 +373,7 @@
     color: var(--black-text);
 }
 
-    /*consultation*/
+/*consultation*/
 
 .consultation {
     margin-top: 100px;
@@ -441,6 +441,7 @@
     height: 140px;
     padding-top: 20px;
     padding-left: 25px;
+    font-family: 'SF Pro Display', sans-serif;
 }
 
 .consultation-form button {
@@ -451,6 +452,23 @@
     color: #fff;
     border-radius: 10px;
     height: 60px;
+}
+
+.consultation-check {
+    margin-top: 5px;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+.consultation-check input {
+    height: auto;
 }
 
 /*news*/
@@ -656,4 +674,214 @@
     width: 186px;
     height: 55px;
     background: var(--blue);
+}
+
+.contacts-social {
+    display: flex;
+    gap: 9px;
+}
+
+.contacts-social a {
+    width: 45px;
+    height: 45px;
+    border: 1px solid var(--gray-shape);
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contacts-block:first-child div {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.contacts-wrapper img {
+    width: 100%;
+}
+
+@media screen and (max-width: 1492px) {
+
+    /*consultation*/
+
+    .consultation {
+        margin-top: 100px;
+    }
+
+    .consultation-wrapper {
+        padding: 80px 100px;
+        background: var(--blue);
+        border-radius: 25px;
+        position: relative;
+    }
+
+    .consultation-wrapper img {
+        position: absolute;
+        right: 64px;
+        bottom: 141px;
+    }
+
+    .consultation-img {
+        right: 0 !important;
+        bottom: 0 !important;
+    }
+
+    .consultation-title {
+        font-weight: 500;
+        font-size: 36px;
+    }
+
+    .consultation-desc {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.35;
+        color: var(--white);
+    }
+
+    .consultation-form {
+        margin-top: 35px;
+        max-width: 547px;
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    /*contacts*/
+
+    .contacts-wrapper {
+        gap: 74px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+
+    /*consultation*/
+
+    .consultation {
+        margin-top: 100px;
+    }
+
+    .consultation-wrapper {
+        padding: 80px 100px;
+        background: var(--blue);
+        border-radius: 25px;
+        position: relative;
+    }
+
+    .consultation-wrapper img {
+        position: absolute;
+        right: 64px;
+        bottom: 141px;
+    }
+
+    .consultation-img {
+        right: 0 !important;
+        bottom: 0 !important;
+    }
+
+    .consultation-title {
+        font-weight: 600;
+        font-size: 20px;
+        max-width: 980px;
+    }
+
+    .consultation-desc {
+        margin-top: 20px;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 1.35;
+        color: var(--white);
+    }
+
+    .consultation-form {
+        margin-top: 20px;
+        max-width: 100%;
+        gap: 8px;
+    }
+
+    .consultation-form input {
+        font-size: 14px;
+        height: 55px;
+        padding-left: 20px;
+    }
+
+    .consultation-form textarea {
+        font-size: 14px;
+        height: 150px;
+        padding-left: 20px;
+    }
+
+    .consultation-form button {
+        font-weight: 500;
+        font-size: 14px;
+        height: 55px;
+    }
+
+    .consultation-check {
+        margin-top: 4px;
+        font-size: 10px;
+    }
+
+    .consultation-check input {
+        height: auto;
+    }
+
+    /*contacts*/
+
+    .contacts {
+        padding: 30px 0 40px 0;
+    }
+
+    .contacts-wrapper {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .contacts-info {
+        gap: 17px;
+    }
+
+    .contacts-block {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .contacts-desc {
+        font-size: 16px;
+        gap: 4px;
+    }
+
+    .contacts-desc svg {
+        width: 16px;
+        height: 16px;
+    }
+
+    .contacts-links {
+        margin-top: 25px;
+        flex-direction: column;
+        gap: 10px;
+        align-items: start;
+    }
+
+    .contacts-links a {
+        border-radius: 7px;
+        width: 100%;
+        height: 43px;
+        font-size: 14px;
+    }
+
+    .contacts-links button {
+        font-size: 14px;
+        border-radius: 7px;
+        width: 100%;
+        height: 43px;
+    }
+
+    .contacts-block:first-child div {
+        gap: 10px;
+    }
+
 }
