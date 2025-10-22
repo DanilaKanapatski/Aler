@@ -6,7 +6,7 @@
 }
 
 .price-content {
-    padding: 17px;
+    padding: 15px 0 22px 17px;
     border-radius: 10px;
     width: 358px;
     background: var(--gray-form);
@@ -52,3 +52,44 @@
     gap: 5px;
     transition: all 0.3s ease;
 }
+
+@media screen and (max-width: 1492px) {
+    /*price*/
+
+}
+
+@media screen and (max-width: 768px) {
+    /*price*/
+
+    .price {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .price-content {
+        padding: 12px 0 15px 12px;
+        width: 100%;
+        gap: 12px;
+    }
+
+    .price-content svg {
+        width: 28px;
+        height: 30px;
+    }
+
+    .price-content p {
+        margin-bottom: 4px;
+        font-size: 16px;
+    }
+
+    .price-content a {
+        font-size: 16px;
+        gap: 2px;
+    }
+
+    .price-content a svg {
+        width: 16px;
+        height: 16px;
+    }
+}
+

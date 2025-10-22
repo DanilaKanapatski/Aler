@@ -185,6 +185,7 @@
         border-top: 1px solid #4e4e4e;
         display: flex;
         justify-content: space-between;
+        align-items: flex-start;
         gap: 94px;
     }
 
