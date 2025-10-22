@@ -34,6 +34,10 @@
 
 /*look*/
 
+.look {
+    margin-bottom: 100px;
+}
+
 .look-title {
     margin-top: 100px;
     font-weight: 500;
@@ -62,7 +66,138 @@
 }
 
 .look-list p {
+    margin-top: 5px;
     font-weight: 500;
     font-size: 18px;
     line-height: 135%;
+}
+
+.look-list span {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 135%;
+    color: var(--gray-base);
+}
+
+.look-btn {
+    margin: 45px auto 0;
+    height: 55px;
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    color: var(--blue);
+    width: 1114px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+}
+
+@media screen and (max-width: 1492px) {
+    /*videos*/
+
+    .videos-title {
+        margin-top: 25px;
+        font-size: 23px;
+    }
+
+    .videos-list li {
+        max-width: 380px;
+    }
+
+    .videos-list video {
+        margin-bottom: 15px;
+        height: 236px;
+    }
+
+    /*look*/
+
+    .look-title {
+        margin-top: 80px;
+        font-size: 23px;
+    }
+
+    .look-list li {
+        max-width: 380px;
+    }
+
+    .look-list video {
+        height: 236px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    /*videos*/
+
+    .videos-title {
+        margin-top: 7px;
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .videos-list {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .videos-list li {
+        max-width: none;
+    }
+
+    .videos-list video {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        height: 185px;
+    }
+
+    .videos-list p {
+        font-size: 14px;
+    }
+
+    /*look*/
+
+    .look {
+        margin-bottom: 50px;
+    }
+
+    .look-title {
+        margin-top: 50px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .look-list {
+        margin-top: 20px;
+        gap: 15px;
+    }
+
+    .look-list li {
+        max-width: none;
+    }
+
+    .look-list video {
+        margin-bottom: 10px;
+        border-radius: 10px;
+        height: 185px;
+    }
+
+    .look-list p {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+
+    .look-list span {
+        font-size: 12px;
+    }
+
+    .look-btn {
+        margin: 30px auto 0;
+        height: 43px;
+        font-size: 14px;
+        width: 100%;
+        border-radius: 7px;
+    }
 }
