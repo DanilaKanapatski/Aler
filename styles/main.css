@@ -507,6 +507,7 @@
     margin-top: 40px;
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
 .news-list li {
@@ -515,24 +516,40 @@
     border: 1px solid var(--gray-shape);
     border-radius: 15px;
     padding: 8px 1px 15px 2px;
+    display: flex;
+    flex-direction: column;
 }
 
 .news-list span {
     margin-top: 15px;
     display: block;
     font-weight: 400;
-    padding-left: 13px;
+    padding-left: 15px;
     font-size: 15px;
     line-height: 1.35;
     color: var(--gray-base);
 }
 
 .news-list p {
-    padding-left: 13px;
     margin-top: 12px;
+    padding-left: 15px;
+    padding-right: 15px;
     font-weight: 500;
     font-size: 18px;
     line-height: 1.35;
+    margin-bottom: 12px;
+}
+
+.news-list a {
+    border-radius: 5px;
+    border: 1px solid var(--gray-shape);
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 15px;
+    margin-top: auto;
 }
 
     /*videos*/
@@ -774,6 +791,21 @@
         flex-direction: column;
     }
 
+    /*news*/
+
+    .news {
+        margin-top: 100px;
+    }
+
+    .news-list li {
+        max-width: 380px;
+        padding: 8px 23px 15px 2px;
+    }
+
+    .news-list p {
+        padding-right: 26px;
+    }
+
     /*contacts*/
 
     .contacts-wrapper {
@@ -853,6 +885,61 @@
 
     .consultation-check input {
         height: auto;
+    }
+
+    /*news*/
+
+    .news {
+        margin-top: 50px;
+    }
+
+    .news-list {
+        margin-top: 40px;
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .news-list li {
+        max-width: 358px;
+        width: 100%;
+        border: 1px solid var(--gray-shape);
+        border-radius: 15px;
+        padding: 8px 1px 15px 2px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .news-list span {
+        margin-top: 15px;
+        display: block;
+        font-weight: 400;
+        padding-left: 15px;
+        font-size: 15px;
+        line-height: 1.35;
+        color: var(--gray-base);
+    }
+
+    .news-list p {
+        margin-top: 12px;
+        padding-left: 15px;
+        padding-right: 15px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.35;
+        margin-bottom: 12px;
+    }
+
+    .news-list a {
+        border-radius: 5px;
+        border: 1px solid var(--gray-shape);
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: 15px;
+        margin-top: auto;
     }
 
     /*contacts*/
