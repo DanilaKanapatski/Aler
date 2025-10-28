@@ -78,8 +78,16 @@
     margin-top: 40px;
 }
 
+.first-subtitle {
+    margin-top: 40px;
+}
+
 
 @media screen and (max-width: 1492px) {
+
+    .first-subtitle {
+        margin-top: 35px;
+    }
 
     .new .container {
         padding-bottom: 50px;
@@ -99,6 +107,7 @@
 }
 
 @media screen and (max-width: 768px) {
+
     .new {
         margin-top: 12px;
     }
@@ -150,6 +159,10 @@
 
     .news-list {
         margin-top: 20px;
+    }
+
+    .second-subtitle {
+        margin-top: 25px;
     }
 
 }
