@@ -1,0 +1,155 @@
+.new {
+    margin-top: 25px;
+}
+
+.new .container {
+    padding-bottom: 60px;
+    border-bottom: 1px solid var(--gray-shape);
+}
+
+.new-title {
+    max-width: 1090px;
+}
+
+.new-subtitle {
+    margin-top: 35px;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 130%;
+}
+
+.new-desc {
+    margin-top: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+    max-width: 1332px;
+}
+
+.new-data {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: var(--gray-text);
+}
+
+.new img {
+    margin-top: 35px;
+    width: 100%;
+}
+
+.new-links {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.new-links a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--blue);
+    text-decoration: underline;
+    display: flex;
+    gap: 6px;
+    align-items: center;
+}
+
+.new-link {
+    margin-top: 60px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.news {
+    margin-top: 60px;
+}
+
+.news-list {
+    margin-top: 40px;
+}
+
+
+@media screen and (max-width: 1492px) {
+
+    .new .container {
+        padding-bottom: 50px;
+    }
+
+    .new img {
+        margin-top: 25px;
+    }
+
+    .new-link {
+        margin-top: 50px;
+    }
+
+    .news {
+        margin-top: 50px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .new {
+        margin-top: 12px;
+    }
+
+    .new .container {
+        padding-bottom: 30px;
+    }
+
+    .new-subtitle {
+        margin-top: 15px;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    .new-desc {
+        margin-top: 12px;
+        font-size: 14px;
+        gap: 12px;
+    }
+
+    .new-data {
+        font-size: 12px;
+    }
+
+    .new img {
+        margin-top: 15px;
+    }
+
+    .new-links {
+        margin-top: 12px;
+        gap: 12px;
+    }
+
+    .new-links a {
+        font-size: 14px;
+        gap: 4px;
+        line-height: 130%;
+    }
+
+    .new-link {
+        margin-top: 30px;
+        font-size: 14px;
+        gap: 4px;
+    }
+
+    .news {
+        margin-top: 30px;
+    }
+
+    .news-list {
+        margin-top: 20px;
+    }
+
+}
