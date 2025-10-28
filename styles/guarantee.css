@@ -5,7 +5,7 @@
 
 .guarantee p {
     margin-top: 10px;
-    max-width: 1373px;
+    max-width: 925px;
     font-weight: 400;
     font-size: 20px;
     line-height: 135%;
@@ -13,7 +13,7 @@
 
 .guarantee .guarantee-desc {
     margin-top: 15px;
-    max-width: 1303px;
+    max-width: 991px;
     font-weight: 500;
     font-size: 20px;
     line-height: 135%;
@@ -48,14 +48,6 @@
 
 @media screen and (max-width: 1492px) {
 
-    .guarantee p {
-        max-width: 1082px;
-    }
-
-    .guarantee .guarantee-desc {
-        max-width: 1041px;
-    }
-
     .guarantee-form__wrapper img {
         right: 12px;
         top: 155px;
@@ -70,7 +62,7 @@
     }
 
     .guarantee p {
-        margin-top: 12px;
+        margin-top: 7px;
         font-size: 14px;
     }
 
