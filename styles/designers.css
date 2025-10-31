@@ -2,6 +2,14 @@
     margin-top: 35px;
     padding: 60px 0;
     background: var(--blue);
+    position: relative;
+}
+
+.designers img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
 }
 
 .designers-title {
@@ -63,6 +71,9 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 130%;
+    display: flex;
+    gap: 3px;
+    align-items: center;
 }
 
 .stp-btn {
@@ -78,4 +89,238 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+/*request*/
+
+.request {
+    position: relative;
+    margin-top: 100px;
+    background: var(--blue);
+    padding: 60px 0 80px 0;
+}
+
+.request img {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.request .title {
+    color: var(--white);
+}
+
+.request-form {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+}
+
+.request-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.request-content input {
+    border-radius: 10px;
+    padding: 20px 0 21px 25px;
+    width: 547px;
+    height: 60px;
+    background: var(--gray-form);
+}
+
+.request-content input::placeholder {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gray-base);
+}
+
+.request-form textarea {
+    border-radius: 10px;
+    width: 547px;
+    height: 270px;
+    background: var(--gray-form);
+}
+
+.request-form textarea::placeholder {
+    padding: 20px 0 21px 25px;
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--gray-base);
+}
+
+.request-btn {
+    margin-top: 10px;
+    border-radius: 10px;
+    width: 547px;
+    height: 60px;
+    background: var(--sky-blue);
+    font-weight: 600;
+    font-size: 18px;
+    text-align: center;
+    color: #fff;
+}
+
+.request-politics {
+    margin-top: 15px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    display: block;
+}
+
+@media screen and (max-width: 1492px) {
+
+    .designers-title {
+       max-width: 858px;
+    }
+
+    .designers-desc {
+        max-width: 880px;
+
+    }
+
+    /*rfa*/
+
+    /*3d*/
+
+    .stp-list {
+        gap: 15px;
+    }
+
+    .stp-list li {
+        gap: 15px;
+    }
+
+    .stp-btn {
+        margin: 35px auto 0;
+        width: 780px;
+    }
+
+    /*request*/
+
+}
+
+@media screen and (max-width: 768px) {
+    .designers {
+        margin-top: 20px;
+        padding: 20px 0 75px 0;
+    }
+
+    .designers img {
+        display: none;
+    }
+
+    .designers-title {
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .designers-desc {
+        margin-top: 12px;
+        font-size: 16px;
+    }
+
+    /*rfa*/
+
+    .rfa {
+        margin-top: 40px;
+    }
+
+    /*3d*/
+
+    .stp {
+        margin-top: 40px;
+    }
+
+    .stp-list {
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .stp-list li {
+        max-width: none;
+        width: 100%;
+        display: flex;
+        gap: 8px;
+        padding: 12px;
+    }
+
+    .stp-list li p {
+        font-size: 14px;
+    }
+
+    .stp-list li a {
+        color: var(--blue);
+        font-size: 14px;
+        gap: 1px;
+    }
+
+    .stp-btn {
+        margin: 25px auto 0;
+        font-size: 14px;
+        border-radius: 7px;
+        height: 43px;
+        width: 100%;
+    }
+
+    /*request*/
+
+    .request {
+        margin-top: 40px;
+        padding: 40px 0 146px 0;
+    }
+
+    .request img {
+        display: none;
+    }
+
+    .request .title {
+        font-size: 20px;
+    }
+
+    .request-form {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .request-content {
+        gap: 8px;
+    }
+
+    .request-content input {
+        padding: 19px 0 19px 20px;
+        width: 100%;
+        height: 55px;
+    }
+
+    .request-content input::placeholder {
+        font-size: 14px;
+    }
+
+    .request-form textarea {
+        width: 100%;
+        height: 150px;
+    }
+
+    .request-form textarea::placeholder {
+        padding: 19px 0 19px 20px;
+        font-size: 14px;
+    }
+
+    .request-btn {
+        margin-top: 8px;
+        width: 100%;
+        height: 55px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    .request-politics {
+        margin-top: 12px;
+        font-size: 10px;
+    }
 }

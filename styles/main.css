@@ -746,6 +746,27 @@
 
 @media screen and (max-width: 1492px) {
 
+    /*information*/
+
+    .information {
+        margin-top: 80px;
+    }
+
+    .information-subtitle {
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 23px;
+    }
+
+    .information-list img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        width: auto;
+        max-height: 215px;
+    }
+
     /*consultation*/
 
     .consultation {
@@ -815,6 +836,59 @@
 }
 
 @media screen and (max-width: 768px) {
+
+    /*information*/
+
+    .information {
+        margin-top: 100px;
+    }
+
+    .information-subtitle {
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 23px;
+    }
+
+    .information-list {
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: nowrap;
+        overflow: hidden;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    .information-list img {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        width: auto;
+        max-height: 198px;
+    }
+
+    .information-list li {
+        max-width: 260px;
+        height: 279px;
+        box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+        background: #fff;
+    }
+
+    .information-list p {
+        font-weight: 600;
+        font-size: 16px;
+    }
+
+    .information-list button {
+        margin-top: 15px;
+        background: var(--blue);
+        border-radius: 7px;
+        padding: 5px 11px 7px;
+        width: 220px;
+        height: 43px;
+        font-size: 14px;
+        color: var(--white);
+    }
 
     /*consultation*/
 
