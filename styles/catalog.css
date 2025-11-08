@@ -1,0 +1,132 @@
+.catalog {
+    margin-bottom: 100px;
+}
+
+.catalog-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 253px;
+}
+
+.catalog-desc {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 130%;
+    color: var(--black-text);
+    max-width: 757px;
+}
+
+.catalog-list {
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.catalog-item {
+    border-radius: 15px;
+    background: var(--gray-shape-2);
+    padding: 25px 0 0 30px;
+    max-width: 547px;
+    width: 100%;
+    height: 380px;
+    position: relative;
+}
+
+.catalog-item__link {
+    font-weight: 500;
+    font-size: 23px;
+    line-height: 130%;
+    color: var(--black-text);
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.catalog-item__desc {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 130%;
+    color: var(--black-text);
+}
+
+.catalog-item__list {
+    margin-top: 15px;
+    max-width: 417px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px 19px;
+}
+
+.catalog-item__list a {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: var(--black-text);
+    position: relative;
+}
+
+.catalog-item__list a::after {
+    content: url("../assets/images/arrow.svg");
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.catalog-list .catalog-item:nth-child(2) {
+    max-width: 358px;
+    padding-right: 58px;
+    position: relative;
+}
+
+.catalog-list .catalog-item:nth-child(2) .catalog-item__img {
+    position: absolute;
+    right: 65px;
+    bottom: 11px;
+}
+
+.catalog-list .catalog-item:nth-child(3) .catalog-item__img {
+    position: absolute;
+    right: 39px;
+    bottom: 28px;
+}
+
+.catalog-list .catalog-item:nth-child(4) {
+    max-width: 358px;
+    padding-right: 15px;
+}
+
+.catalog-list .catalog-item:nth-child(4) .catalog-item__img {
+    position: absolute;
+    right: 87px;
+    bottom: 14px;
+}
+
+.catalog-list .catalog-item:nth-child(5) .catalog-item__img {
+    position: absolute;
+    right: 15px;
+    bottom: 71px;
+}
+
+.catalog-list .catalog-item:nth-child(5) .catalog-item__desc {
+    max-width: 333px;
+}
+
+.catalog-list .catalog-item:nth-child(6) {
+    padding: 0;
+    background: none;
+    border: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.catalog-list .catalog-item:nth-child(6) div {
+    padding: 25px 30px;
+    background: var(--gray-shape-2);
+    border-radius: 15px;
+    height: 113px;
+}
