@@ -76,50 +76,50 @@
     height: 231px;
 }
 
-.dealers-list li:last-child .dealers-click {
-    justify-content: flex-end;
-}
+/*.dealers-list li:last-child .dealers-click {*/
+/*    justify-content: flex-end;*/
+/*}*/
 
-.dealers-click {
-    margin-top: 15px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 !important;
-}
+/*.dealers-click {*/
+/*    margin-top: 15px;*/
+/*    position: relative;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*    padding: 0 !important;*/
+/*}*/
 
-.dealers-btn {
-    cursor: pointer;
-}
+/*.dealers-btn {*/
+/*    cursor: pointer;*/
+/*}*/
 
-.dealers-click a {
-    margin-top: 0;
-}
+/*.dealers-click a {*/
+/*    margin-top: 0;*/
+/*}*/
 
-.dealers-click div {
-    padding: 0 !important;
-}
+/*.dealers-click div {*/
+/*    padding: 0 !important;*/
+/*}*/
 
-.dealers-desc {
-    display: none;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 135%;
-    border: 1px solid var(--gray-shape);
-    border-radius: 10px;
-    width: 323px;
-    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
-    background: #fff;
-    padding: 15px 0 18px 18px;
-    position: absolute;
-    top: 22px;
-    right: 0;
-}
+/*.dealers-desc {*/
+/*    display: none;*/
+/*    font-weight: 400;*/
+/*    font-size: 14px;*/
+/*    line-height: 135%;*/
+/*    border: 1px solid var(--gray-shape);*/
+/*    border-radius: 10px;*/
+/*    width: 323px;*/
+/*    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);*/
+/*    background: #fff;*/
+/*    padding: 15px 0 18px 18px;*/
+/*    position: absolute;*/
+/*    top: 22px;*/
+/*    right: 0;*/
+/*}*/
 
-.dealers-desc.active {
-    display: block;
-}
+/*.dealers-desc.active {*/
+/*    display: block;*/
+/*}*/
 
 @media screen and (max-width: 1492px) {
     /*dealers*/
@@ -134,13 +134,66 @@
 
     }
 
-    .dealers-img img {
-       max-width: 329px;
+    .dealers-list li:nth-child(8) h3 {
+        padding-bottom: 0;
+        margin-bottom: 13px;
     }
 
-    .dealers-list li:nth-child(7) a {
-        font-size: 16px;
+    .dealers-list li:nth-child(8) h3:after {
+        display: none;
     }
+
+    .dealers-list li:nth-child(8) a:nth-child(2){
+        margin-top: 13px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    /*dealers*/
+
+    .dealers {
+        margin-bottom: 80px;
+    }
+
+    .dealers-list {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .dealers-list li {
+        max-width: 310px;
+    }
+
+    .dealers-list li div {
+        padding: 0 15px;
+    }
+
+    .dealers-list h3 {
+        padding-bottom: 15px;
+    }
+
+    .dealers-img {
+        height: 160px;
+    }
+
+    .dealers-list a {
+        font-size: 17px;
+    }
+
+    .dealers-list li:nth-child(8) h3 {
+        padding-bottom: 0;
+        margin-bottom: 8px;
+    }
+
+    .dealers-list li:nth-child(8) h3:after {
+        display: none;
+    }
+
+    .dealers-list li:nth-child(8) a:nth-child(2){
+        margin-top: 8px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
@@ -158,7 +211,7 @@
     .dealers-list li {
         /*box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);*/
         border-radius: 10px;
-        max-width: 330px;
+        max-width: none;
         padding-bottom: 20px;
     }
 
@@ -179,8 +232,8 @@
     }
 
     .dealers-list a svg:first-child {
-        width: 18px;
-        height: 18px;
+        width: 17px;
+        height: 17px;
     }
 
     .dealers-list a svg:nth-child(2) {
@@ -192,21 +245,6 @@
         height: 140px;
     }
 
-    .dealers-img img {
-        max-width: 296px;
-    }
 
-    .dealers-click {
-        margin-top: 10px;
-    }
-
-    .dealers-desc {
-        width: 323px;
-        padding: 15px 0 18px 18px;
-    }
-
-    .dealers-click a {
-        margin-top: 0;
-    }
 
 }

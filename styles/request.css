@@ -1,0 +1,153 @@
+/*request*/
+
+.request {
+    position: relative;
+    background: var(--blue);
+    padding: 60px 0 80px 0;
+}
+
+.request-svg {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+.request .container {
+    position: relative;
+}
+
+.request-png {
+    position: absolute;
+    bottom: 4px;
+    right: 80px;
+    z-index: 3;
+}
+
+.request .title {
+    color: var(--white);
+}
+
+.request-form {
+    max-width: 547px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.request-politics {
+    margin-top: 5px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    color: #fff;
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+
+.request-politics a {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+}
+
+@media screen and (max-width: 1492px) {
+    /*request*/
+
+    .request-png {
+        position: absolute;
+        bottom: 63px;
+        right: 12px;
+        z-index: 3;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*request*/
+
+    .request {
+        position: relative;
+        background: var(--blue);
+        padding: 50px 0;
+    }
+
+    .request .title {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .request-png {
+        position: absolute;
+        bottom: 89px;
+        right: 22px;
+        z-index: 3;
+    }
+
+    .request-form {
+        max-width: 470px;
+        margin-top: 25px;
+    }
+
+    .request-politics {
+        margin-top: 0;
+    }
+
+    .request-svg {
+        height: 100%;
+    }
+
+    .request-svg img {
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*request*/
+
+    .request {
+        padding: 40px 0 325px 0;
+    }
+
+    .request-svg {
+        position: absolute;
+        right: auto;
+        left: 0;
+        top: auto;
+        bottom: 0;
+        height: auto;
+        width: 100%;
+    }
+
+    .request-svg img {
+        width: 100%;
+        height: auto;
+    }
+
+    .request-png {
+        position: absolute;
+        bottom: -234px;
+        left: 50%;
+        right: auto;
+        transform: translateX(-50%);
+
+    }
+
+    .request .title {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .request-form {
+        max-width: none;
+        width: 100%;
+        margin-top: 20px;
+        gap: 8px;
+    }
+
+    .request-politics {
+        margin-top: 4px;
+        font-size: 10px;
+    }
+
+}

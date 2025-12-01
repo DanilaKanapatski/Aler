@@ -1,3 +1,5 @@
+/*new*/
+
 .new {
     margin-top: 25px;
 }
@@ -54,8 +56,9 @@
     line-height: 130%;
     color: var(--blue);
     text-decoration: underline;
+    text-decoration-skip-ink: none;
     display: flex;
-    gap: 6px;
+    gap: 5px;
     align-items: center;
 }
 
@@ -84,6 +87,7 @@
 
 
 @media screen and (max-width: 1492px) {
+    /*new*/
 
     .first-subtitle {
         margin-top: 35px;
@@ -104,9 +108,90 @@
     .news {
         margin-top: 50px;
     }
+
+    .news-list li:nth-child(4) {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*new*/
+
+    .new {
+        margin-top: 20px;
+    }
+
+    .new .container {
+        padding-bottom: 40px;
+    }
+
+    .new-title {
+        max-width: 838px;
+    }
+
+    .new-subtitle {
+        margin-top: 25px;
+        font-size: 25px;
+    }
+
+    .new-desc {
+        margin-top: 20px;
+        font-size: 16px;
+        max-width: 838px;
+    }
+
+    .new img {
+        margin-top: 20px;
+    }
+
+    .new-links {
+        gap: 12px;
+    }
+
+    .new-links a {
+        font-size: 16px;
+    }
+
+    .new-link {
+        margin-top: 40px;
+        font-size: 16px;
+        gap: 3px;
+    }
+
+    .new-link svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .news {
+        margin-top: 40px;
+    }
+
+    .news-list {
+        margin-top: 30px;
+    }
+
+    .first-subtitle {
+        margin-top: 20px;
+    }
+
+    .second-subtitle {
+        margin-top: 30px;
+    }
+
 }
 
 @media screen and (max-width: 768px) {
+
+    /*new*/
+
+    .links a:last-child {
+        flex: 1;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        min-width: 0;
+    }
 
     .new {
         margin-top: 12px;
@@ -150,7 +235,7 @@
     .new-link {
         margin-top: 30px;
         font-size: 14px;
-        gap: 4px;
+        gap: 6px;
     }
 
     .news {

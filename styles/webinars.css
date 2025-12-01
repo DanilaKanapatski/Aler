@@ -50,6 +50,33 @@
     }
 }
 
+@media screen and (max-width: 1492px) {
+    /*webinars*/
+
+    .webinars {
+        margin-bottom: 80px;
+    }
+
+    .webinars-list {
+        margin-top: 30px;
+        gap: 25px 15px;
+    }
+
+    .webinars-list li {
+        max-width: 310px;
+    }
+
+    .webinars-list video {
+        margin-bottom: 10px;
+        height: 210px;
+    }
+
+    .webinars-list p {
+        margin-top: 3px;
+        font-size: 16px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     /*webinars*/
 

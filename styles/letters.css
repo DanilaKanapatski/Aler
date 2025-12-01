@@ -1,0 +1,59 @@
+/*letters*/
+
+.letters {
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.letters-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.letters-list li {
+    max-width: 236px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1492px) {
+    /*letters*/
+
+    .letters-list {
+        gap: 10px;
+    }
+
+    .letters-list li {
+        max-width: 228px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    /*letters*/
+
+    .letters {
+        margin-top: 30px;
+        margin-bottom: 70px;
+    }
+
+    .letters-list {
+        gap: 16px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /*letters*/
+
+    .letters {
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+
+    .letters-list {
+        gap: 10px;
+    }
+
+    .letters-list li {
+        max-width: 160px;
+    }
+}
