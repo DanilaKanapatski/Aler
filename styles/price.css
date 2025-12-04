@@ -16,6 +16,18 @@
     transition: all 0.3s ease;
 }
 
+.price-content>svg path {
+    transition: all 0.3s ease;
+}
+
+.price-content:hover>svg path {
+    fill: var(--white);
+}
+
+.price-content a svg path {
+    transition: all 0.3s ease;
+}
+
 .price-content:hover {
     background: var(--blue);
 }
@@ -28,9 +40,8 @@
     color: var(--white);
 }
 
-.price-content:hover svg path{
+.price-content:hover a svg path {
     stroke: var(--white);
-    fill: var(--white);
 }
 
 .price-content p {

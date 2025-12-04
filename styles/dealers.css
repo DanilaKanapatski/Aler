@@ -18,6 +18,12 @@
     max-width: 484px;
     width: 100%;
     padding-bottom: 25px;
+    transition: all 0.3s ease;
+}
+
+.dealers-list li:hover {
+    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+    background: #fff;
 }
 
 .dealers-list li div {
@@ -31,6 +37,11 @@
     padding-bottom: 20px;
     margin-bottom: 20px;
     position: relative;
+    cursor: pointer;
+}
+
+.dealers-list h3:hover {
+    color: var(--blue);
 }
 
 .dealers-list h3::after {
@@ -51,11 +62,24 @@
     display: flex;
     align-items: center;
     gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.dealers-list a:hover {
+    color: var(--blue);
 }
 
 .dealers-list a svg:nth-child(2) {
     margin-left: -5px;
     margin-top: -16px;
+}
+
+.dealers-list a svg:nth-child(2) path {
+    transition: all 0.3s ease;
+}
+
+.dealers-list a:hover svg:nth-child(2) path {
+    fill: var(--blue);
 }
 
 .dealers-list li div a:nth-child(2) {
@@ -211,7 +235,7 @@
     .dealers-list li {
         /*box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);*/
         border-radius: 10px;
-        max-width: none;
+        max-width: 480px;
         padding-bottom: 20px;
     }
 

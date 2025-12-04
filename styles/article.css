@@ -4,6 +4,35 @@
     max-width: 1140px;
 }
 
+.article-img {
+    position: relative;
+}
+
+.article-img div {
+    position: absolute;
+    bottom: 30px;
+    left: 30px;
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+    backdrop-filter: blur(4px);
+    box-shadow: inset 0 4px 7px 1px rgba(255, 255, 255, 0.25);
+    background: rgba(255, 255, 255, 0.4);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.article-img div:hover {
+    background: #fff;
+}
+
+.article-img div:hover svg path {
+    stroke: var(--blue);
+}
+
 .article .container {
     padding-bottom: 60px;
     position: relative;
@@ -17,6 +46,70 @@
     width: 100%;
     height: 1px;
     background: var(--gray-shape);
+}
+
+/* Модальное окно для полноэкранного просмотра */
+.image-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.95);
+    z-index: 9999;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.image-modal.active {
+    display: flex;
+    opacity: 1;
+}
+
+.modal-content {
+    max-width: 90%;
+    max-height: 90%;
+    position: relative;
+}
+
+.modal-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: zoomIn 0.3s ease;
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Кнопка закрытия */
+.close-modal {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+    background: none;
+    border: none;
+    z-index: 10000;
+    transition: transform 0.3s ease;
+}
+
+.close-modal:hover {
+    transform: rotate(90deg);
 }
 
 .articles {
@@ -66,6 +159,19 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.article-back svg path {
+    transition: all 0.3s ease;
+}
+
+.article-back:hover {
+    color: var(--blue);
+}
+
+.article-back:hover svg path {
+    stroke: var(--blue);
 }
 
 @media screen and (max-width: 1492px) {
