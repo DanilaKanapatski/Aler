@@ -54,6 +54,11 @@
     }
 
     .letters-list li {
-        max-width: 160px;
+        width: 48%;
+        min-width: 160px;
+    }
+
+    .letters-list li img {
+        width: 100%;
     }
 }

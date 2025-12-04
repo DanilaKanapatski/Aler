@@ -60,6 +60,24 @@
     font-weight: 500;
     font-size: 18px;
     color: var(--blue);
+    transition: all 0.3s ease;
+}
+
+.contacts-links a svg {
+    transition: all 0.3s ease;
+}
+
+.contacts-links a svg path {
+    transition: all 0.3s ease;
+}
+
+.contacts-links a:hover {
+    color: var(--white);
+    background: var(--blue);
+}
+
+.contacts-links a:hover svg path {
+    fill: var(--white);
 }
 
 .contacts-links button {
@@ -70,6 +88,11 @@
     width: 186px;
     height: 55px;
     background: var(--blue);
+    transition: all 0.3s ease;
+}
+
+.contacts-links button:hover {
+    background: #244e9c;
 }
 
 .contacts-social {
@@ -85,6 +108,16 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.contacts-social a:hover {
+    background: var(--blue);
+    border: none;
+}
+
+.contacts-social a:hover svg path {
+    fill: var(--white);
 }
 
 .contacts-block:first-child div {

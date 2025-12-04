@@ -86,7 +86,8 @@
     }
 
     .achievements-list li {
-        max-width: 160px;
+        min-width: 160px;
+        width: 48%;
     }
 
     .achievements-list picture {

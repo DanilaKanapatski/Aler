@@ -178,18 +178,19 @@
 
     .team-content {
         margin-top: 20px;
-        gap: 25px;
+        gap: 25px 10px;
     }
 
     .team-block {
         border: none;
         max-width: none;
+        width: auto;
         gap: 10px;
         flex-direction: column;
     }
 
     .team-block img {
-        width: 100%;
+        width: 246px;
     }
 
     .team-block__info {

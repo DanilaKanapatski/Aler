@@ -28,6 +28,35 @@
     display: flex;
     gap: 17px;
     background: var(--gray-form);
+    transition: all 0.3s ease;
+}
+
+.service-list li:hover {
+    background: var(--blue);
+}
+
+.service-list li>svg path {
+    transition: all 0.3s ease;
+}
+
+.service-list li:hover>svg path {
+    fill: var(--white);
+}
+
+.service-list li:hover p {
+    color: var(--white);
+}
+
+.service-list li:hover a {
+    color: var(--white);
+}
+
+.service-list li:hover a svg path{
+    stroke: var(--white);
+}
+
+.service-list li a svg path{
+    transition: all 0.3s ease;
 }
 
 .service-list li p {
@@ -36,6 +65,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
+    transition: all 0.3s ease;
 }
 
 .service-list li a {
@@ -46,6 +76,7 @@
     display: flex;
     gap: 5px;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 @media screen and (max-width: 1492px) {

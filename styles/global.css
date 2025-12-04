@@ -107,6 +107,9 @@ body {
     width: 100%;
     height: 60px;
     background: var(--gray-form);
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black-text);
 }
 
 .input::placeholder {
@@ -139,6 +142,12 @@ body {
     font-size: 18px;
     text-align: center;
     color: #fff;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background: var(--white);
+    color: var(--sky-blue);
 }
 
 @media screen and (max-width: 1492px) {
@@ -169,6 +178,7 @@ body {
     .input {
         padding-left: 20px;
         height: 50px;
+        font-size: 14px;
     }
 
     .input::placeholder {

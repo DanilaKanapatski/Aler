@@ -96,7 +96,12 @@
     }
 
     .documentation-list li {
-        max-width: 160px;
+        width: 48%;
+        min-width: 164px;
+    }
+
+    .documentation-list li img {
+        width: 100%;
     }
 
     .documentation-list p {
