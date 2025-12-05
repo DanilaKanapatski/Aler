@@ -219,6 +219,19 @@
     display: flex;
     align-items: center;
     gap: 5px;
+    transition: all 0.3s ease;
+}
+
+.awards-wrapper a:hover {
+    color: var(--blue);
+}
+
+.awards-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.awards-wrapper a:hover svg path {
+    stroke: var(--blue);
 }
 
 .awards-list {
@@ -244,7 +257,20 @@
     color: #000;
     display: flex;
     gap: 5px;
+    transition: all 0.3s ease;
     align-items: center;
+}
+
+.articles-wrapper a:hover {
+    color: var(--blue);
+}
+
+.articles-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.articles-wrapper a:hover svg path {
+    stroke: var(--blue);
 }
 
 .articles {
@@ -734,7 +760,11 @@
         display: block;
     }
 
+    /*details*/
 
+    .details {
+        margin-bottom: 50px;
+    }
 
     /*contacts*/
 

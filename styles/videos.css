@@ -92,6 +92,12 @@
     justify-content: center;
     border: 1px solid var(--blue);
     border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.look-btn:hover {
+    background: var(--blue);
+    color: var(--white);
 }
 
 .pagination {
@@ -111,6 +117,28 @@
     text-align: center;
     color: var(--gray-text);
     cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.pagination button:hover {
+    background: var(--gray-form);
+    border-radius: 5px;
+}
+
+.pagination button:first-child svg path,
+.pagination button:last-child svg path {
+    transition: all 0.3s ease;
+}
+
+.pagination button:first-child:hover,
+.pagination button:last-child:hover {
+    background: none;
+}
+
+.pagination button:first-child:hover svg path,
+.pagination button:last-child:hover svg path {
+    stroke: var(--blue);
+
 }
 
 .pagination button.active {

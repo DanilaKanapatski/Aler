@@ -63,8 +63,16 @@
 @media screen and (max-width: 768px) {
     /*details*/
 
+    .details {
+        margin-bottom: 40px;
+    }
+
     .details .container {
         padding: 0;
+    }
+
+    .details .title {
+        padding-left: 15px;
     }
 
     .details-list {

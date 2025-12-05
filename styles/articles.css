@@ -14,6 +14,11 @@
     font-size: 17px;
     line-height: 1.3;
     color: var(--gray-text);
+    transition: all 0.3s ease;
+}
+
+.articles-tabs button:hover {
+    color: var(--blue);
 }
 
 .articles-tabs button:first-child {
@@ -136,7 +141,34 @@
     /*articles*/
 
     .articles-tabs {
+        margin-top: 15px;
+        gap: 5px;
+        overflow-x: auto; /* Вместо hidden - теперь можно скроллить */
+        overflow-y: hidden; /* Вертикальный скролл скрываем */
+        white-space: nowrap; /* Запрещаем перенос элементов */
+        -webkit-overflow-scrolling: touch; /* Плавный скролл на iOS */
+        scrollbar-width: none; /* Скрываем скроллбар в Firefox */
+    }
+
+    /* Скрываем скроллбар в Webkit-браузерах (Chrome, Safari, Edge) */
+    .articles-tabs::-webkit-scrollbar {
         display: none;
+    }
+
+    .articles-tabs li {
+        flex-shrink: 0; /* Запрещаем уменьшение элементов */
+    }
+
+    .articles-tabs li:first-child button {
+        width: 117px;
+    }
+
+    .articles-tabs button {
+        font-size: 14px;
+        height: 41px;
+        padding: 10px 15px;
+        border-radius: 7px;
+        white-space: nowrap; /* Текст в кнопках не переносится */
     }
 
     .articles-list {
@@ -146,9 +178,10 @@
     }
 
     .articles-list li {
-        max-width: none;
+        max-width: 440px;
         width: 100%;
         padding-bottom: 25px;
+        border-radius: 0;
         border: none;
         border-bottom: 1px solid var(--gray-shape);
     }

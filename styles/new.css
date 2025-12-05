@@ -70,7 +70,20 @@
     color: #000;
     display: flex;
     gap: 5px;
+    transition: all 0.3s ease;
     align-items: center;
+}
+
+.new-link svg path {
+    transition: all 0.3s ease;
+}
+
+.new-link:hover svg path {
+    stroke: var(--blue);
+}
+
+.new-link:hover {
+    color: var(--blue);
 }
 
 .news {
