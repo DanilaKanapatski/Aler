@@ -1,3 +1,5 @@
+/*designers*/
+
 .designers {
     margin-top: 35px;
     padding: 60px 0;
@@ -30,6 +32,75 @@
     color: var(--white);
 }
 
+/*information*/
+
+.information-list {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 13px;
+    justify-content: space-between;
+}
+
+.information-list img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    width: auto;
+    max-height: 215px;
+}
+
+.information-list li {
+    max-width: 288px;
+    width: 100%;
+    display: flex;
+    height: 339px;
+    padding-bottom: 20px;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+.information-list li:hover {
+    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+    background: #fff;
+    border-radius: 15px;
+}
+
+.information-list li div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.information-list p {
+    margin-top: auto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.3;
+    padding-left: 20px;
+}
+
+.information-list button {
+    margin-top: 13px;
+    margin-left: 20px;
+    background: var(--gray-form);
+    border-radius: 10px;
+    padding: 5px 20px 7px;
+    width: 108px;
+    height: 45px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 18px;
+    color: var(--black-text);
+}
+
+.information-list button:hover {
+    color: var(--white);
+    background: var(--blue);
+}
+
 /*rfa*/
 
 .rfa {
@@ -39,8 +110,8 @@
 /*3d*/
 
 .stp {
-      margin-top: 80px;
-  }
+    margin-top: 80px;
+}
 
 .stp-list {
     margin-top: 40px;
@@ -52,12 +123,13 @@
 .stp-list li {
     max-width: 358px;
     width: 100%;
-    display: flex;
+    display: none;
     gap: 17px;
     align-items: start;
     border-radius: 10px;
     background: var(--gray-form);
     padding: 15px 0 22px 17px;
+    transition: all 0.3s ease;
 }
 
 .stp-list li p {
@@ -65,6 +137,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 130%;
+    transition: all 0.3s ease;
 }
 
 .stp-list li a {
@@ -74,6 +147,7 @@
     display: flex;
     gap: 3px;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
 .stp-btn {
@@ -89,30 +163,115 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: all 0.3s ease;
 }
 
+.stp-btn:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.stp-list li > svg path {
+    transition: all 0.3s ease;
+}
+
+.stp-list li:hover > svg path {
+    fill: var(--white);
+}
+
+.stp-list li a svg path {
+    transition: all 0.3s ease;
+}
+
+.stp-list li:hover {
+    background: var(--blue);
+}
+
+.stp-list li:hover p {
+    color: var(--white);
+}
+
+.stp-list li:hover a {
+    color: var(--white);
+}
+
+.stp-list li:hover a svg path {
+    stroke: var(--white);
+}
+
+.stp-item.visible {
+    display: flex; /* или block — под ваш дизайн */
+}
+
+/*send*/
+
+.send {
+    margin-top: 100px;
+    background: var(--blue);
+    padding: 60px 0 80px;
+    position: relative;
+}
+
+.send-form {
+    margin-top: 40px;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+    flex-direction: column;
+}
+
+.send .title {
+    color: var(--white);
+}
+
+.send-form textarea {
+    border-radius: 10px;
+    width: 547px;
+    height: 270px;
+    position: relative;
+    z-index: 3;
+}
+
+.send-wrapper {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: start;
+}
+
+.send-form .btn {
+    width: 547px;
+}
+
+.send-block {
+    max-width: 547px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
 
 
 @media screen and (max-width: 1492px) {
 
     .designers-title {
-       max-width: 858px;
+        max-width: 849px;
     }
 
     .designers-desc {
         max-width: 880px;
-
     }
 
-    /*rfa*/
+    /*information*/
+
+    .information-list {
+        gap: 13px 9px;
+        justify-content: start;
+    }
 
     /*3d*/
 
     .stp-list {
-        gap: 15px;
-    }
-
-    .stp-list li {
         gap: 15px;
     }
 
@@ -121,18 +280,159 @@
         width: 780px;
     }
 
-    /*request*/
+}
 
+@media screen and (max-width: 1024px) {
+    /*designers*/
+
+    .designers {
+        margin-top: 30px;
+        padding: 50px 0;
+    }
+
+    .designers-title {
+        margin-bottom: 20px;
+        max-width: 560px;
+        font-size: 26px;
+    }
+
+    .designers-desc {
+        max-width: 741px;
+        font-size: 18px;
+    }
+
+    /*information*/
+
+    .information-list {
+        margin-top: 30px;
+        gap: 16px;
+        justify-content: start;
+    }
+
+    .information-list img {
+        max-height: 165px;
+    }
+
+    .information-list li div {
+        height: 165px;
+    }
+
+    .information-list li {
+        max-width: 228px;
+        height: 301px;
+        padding-bottom: 15px;
+        box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+        border-radius: 15px;
+        background: #fff;
+    }
+
+    .information-list p {
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 15px;
+    }
+
+    .information-list button {
+        margin-top: 15px;
+        margin-left: 15px;
+        margin-right: 15px;
+        background: var(--blue);
+        border-radius: 7px;
+        padding: 5px 11px 7px;
+        width: 198px;
+        height: 43px;
+        color: var(--white);
+        font-size: 14px;
+    }
+
+    /*rfa*/
+
+    .rfa {
+        margin-top: 70px;
+    }
+
+    /*3d*/
+
+    .stp {
+        margin-top: 70px;
+    }
+
+    .stp-list {
+        gap: 15px;
+    }
+
+    .stp-list li {
+        max-width: 310px;
+        gap: 12px;
+        padding: 17px 0 20px 17px;
+    }
+
+    .stp-list li p {
+        margin-bottom: 6px;
+        font-size: 16px;
+    }
+
+    .stp-list li a {
+        font-size: 16px;
+        gap: 4px;
+    }
+
+    .stp-list li a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .stp-btn {
+        margin: 35px auto 0;
+        font-size: 16px;
+        height: 45px;
+        width: 230px;
+    }
+
+    /*send*/
+
+    .send {
+        margin-top: 70px;
+        padding: 50px 0;
+    }
+
+    .send-form {
+        margin-top: 25px;
+    }
+
+    .send-form textarea {
+        width: 470px;
+        height: 140px;
+    }
+
+    .send-wrapper {
+        flex-direction: column;
+    }
+
+    .send-form div {
+        max-width: 470px;
+    }
+
+    .send-form .btn {
+        width: 470px;
+    }
 }
 
 @media screen and (max-width: 768px) {
+    /*designers*/
+
     .designers {
         margin-top: 20px;
-        padding: 20px 0 75px 0;
+        padding: 20px 0 75px;
     }
 
     .designers img {
-        display: none;
+        position: absolute;
+        right: 0;
+        top: auto;
+        bottom: 0;
+        width: 100%;
+        height: auto;
     }
 
     .designers-title {
@@ -142,7 +442,60 @@
 
     .designers-desc {
         margin-top: 12px;
+        max-width: none;
         font-size: 16px;
+    }
+
+    /*information*/
+
+    .information-slider {
+        overflow: hidden;
+        padding-right: 10px;
+    }
+
+    .information-list li.swiper-slide {
+        width: auto;
+        margin-right: 10px; /* отступ между карточками */
+    }
+
+    .information-list {
+        margin-top: 20px;
+        display: flex;
+    }
+
+    .information-list img {
+        max-height: 180px;
+    }
+
+    .information-list li {
+        max-width: 260px;
+        height: 295px;
+        padding-bottom: 20px;
+    }
+
+    .information-list li div {
+        height: 180px;
+    }
+
+    .information-list p {
+        margin-top: auto;
+        font-weight: 600;
+        font-size: 16px;
+        padding-left: 20px;
+    }
+
+    .information-list button {
+        margin-top: 15px;
+        box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+        background: #fff;
+        margin-left: 20px;
+        background: var(--blue);
+        border-radius: 7px;
+        padding: 5px 11px 7px;
+        width: 220px;
+        height: 43px;
+        font-size: 14px;
+        color: var(--white);
     }
 
     /*rfa*/
@@ -159,25 +512,38 @@
 
     .stp-list {
         margin-top: 20px;
+        flex-direction: column;
         gap: 5px;
     }
 
     .stp-list li {
         max-width: none;
-        width: 100%;
-        display: flex;
         gap: 8px;
-        padding: 12px;
+        padding: 12px 0 12px 12px;
     }
 
     .stp-list li p {
+        margin-bottom: 5px;
         font-size: 14px;
     }
 
     .stp-list li a {
-        color: var(--blue);
-        font-size: 14px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 130%;
+        display: flex;
         gap: 1px;
+        color: var(--blue);
+
+    }
+
+    .stp-list li a svg {
+        width: 13px;
+        height: 13px;
+    }
+
+    .stp-list li a svg path {
+        stroke: var(--blue);
     }
 
     .stp-btn {
@@ -188,61 +554,40 @@
         width: 100%;
     }
 
-    /*request*/
+    .stp-item.visible {
+        display: flex; /* или block — под ваш дизайн */
+    }
 
-    .request {
+    /*send*/
+
+    .send {
         margin-top: 40px;
-        padding: 40px 0 146px 0;
+        padding: 40px 0 146px;
     }
 
-    .request img {
-        display: none;
-    }
-
-    .request .title {
-        font-size: 20px;
-    }
-
-    .request-form {
+    .send-form {
         margin-top: 20px;
-        flex-direction: column;
         gap: 8px;
     }
 
-    .request-content {
-        gap: 8px;
-    }
-
-    .request-content input {
-        padding: 19px 0 19px 20px;
-        width: 100%;
-        height: 55px;
-    }
-
-    .request-content input::placeholder {
-        font-size: 14px;
-    }
-
-    .request-form textarea {
+    .send-form textarea {
         width: 100%;
         height: 150px;
     }
 
-    .request-form textarea::placeholder {
-        padding: 19px 0 19px 20px;
-        font-size: 14px;
-    }
-
-    .request-btn {
-        margin-top: 8px;
+    .send-wrapper {
         width: 100%;
-        height: 55px;
-        font-weight: 500;
-        font-size: 14px;
+        display: flex;
+        gap: 8px;
     }
 
-    .request-politics {
-        margin-top: 12px;
-        font-size: 10px;
+    .send-form .btn {
+        width: 100%;
     }
+
+    .send-block {
+        max-width: none;
+        gap: 8px;
+    }
+
 }
