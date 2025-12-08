@@ -12,26 +12,27 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    btn.addEventListener("click", () => {
-        items.forEach(item => item.classList.add("visible"));
-        btn.style.display = "none"; // скрываем кнопку
-    });
-
+    if (btn) {
+        btn.addEventListener("click", () => {
+            items.forEach(item => item.classList.add("visible"));
+            btn.style.display = "none"; // скрываем кнопку
+        });
+    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
     // Мобильный слайдер для information-list
     if (window.innerWidth <= 768) {
         new Swiper('.information-slider', {
-        slidesPerView: 'auto',
-        spaceBetween: 10,
-        allowTouchMove: true,
-        slideToClickedSlide: true,
-        loop: false,
-        slidesOffsetBefore: 0,
-        slidesOffsetAfter: 0,
-        centerInsufficientSlides: false
-    });
+            slidesPerView: 'auto',
+            spaceBetween: 10,
+            allowTouchMove: true,
+            slideToClickedSlide: true,
+            loop: false,
+            slidesOffsetBefore: 0,
+            slidesOffsetAfter: 0,
+            centerInsufficientSlides: false
+        });
     }
 });
 

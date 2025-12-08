@@ -3,24 +3,34 @@
 }
 
 .items-list {
+    margin-top: 40px;
     display: flex;
     gap: 20px;
     flex-wrap: wrap;
 }
 
 .items-list li {
-    margin-top: 40px;
-    padding: 17px 20px 20px;
+    padding: 17px 20px 20px 20px;
     max-width: 358px;
     width: 100%;
+    transition: all 0.3s ease;
+    display: none;
 }
 
-.items-img {
-    margin: 0 auto;
+.items-list li.visible {
+    display: block; /* показывать видимые */
+}
+
+.items-list li:hover {
+    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+    background: #fff;
+    border-radius: 15px;
+}
+
+.items-wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
 .items-title {
@@ -52,9 +62,6 @@
 
 .items-statistic {
     margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 .items-statistic a {
@@ -68,11 +75,12 @@
     align-items: center;
     justify-content: center;
     color: var(--black-text);
+    transition: all 0.3s ease;
 }
 
-.items-statistic div {
-    display: flex;
-    gap: 12px;
+.items-statistic a:hover {
+    background: var(--blue);
+    color: var(--white);
 }
 
 .items-btn {
@@ -89,8 +97,168 @@
     font-size: 18px;
     color: var(--blue);
     background: initial;
+    transition: all 0.3s ease;
+}
+
+.items-btn:hover {
+    background: var(--blue);
+    color: var(--white);
+}
+
+.items-link {
+    display: flex;
+    justify-content: space-between;
+}
+
+.items-link a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.items-link a:hover {
+    color: var(--blue);
+}
+
+.items-link a svg path {
+    transition: all 0.3s ease;
+}
+
+.items-link a:hover svg path {
+    stroke: var(--blue);
 }
 
 .popular {
     margin-top: 100px;
+}
+
+@media screen and (max-width: 1492px) {
+
+    .items-list li {
+        max-width: 380px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .items {
+        margin-top: 70px;
+    }
+
+    .items-list {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .items-list li {
+        padding: 20px 20px 20px 18px;
+        box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+        background: #fff;border-radius: 15px;
+        max-width: 310px;
+    }
+
+    .items-list li img {
+        width: 250px;
+    }
+
+    .items-title {
+        margin-top: 55px;
+    }
+
+    .items-statistic a {
+        background: var(--blue);
+        color: var(--white);
+    }
+
+    .items-btn {
+        margin: 35px auto 0;
+        width: 228px;
+        height: 45px;
+        font-size: 16px;
+    }
+
+    .items-link a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .items-link a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .popular {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .items {
+        margin-top: 50px;
+    }
+
+    .items-list {
+        margin-top: 20px;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+
+    .items-list li {
+        padding: 19px 20px 20px 20px;
+        max-width: 280px;
+        display: block;
+        box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+        background: #fff;
+        border-radius: 10px;
+    }
+
+    .items-list li.visible {
+        display: block; /* показывать видимые */
+    }
+
+    .items-title {
+        margin-top: 54px;
+        font-size: 16px;
+    }
+
+    .items-price {
+        margin-top: 10px;
+    }
+
+    .items-price span:first-child {
+        font-size: 12px;
+    }
+
+    .items-price span:nth-child(2) {
+        font-size: 16px;
+    }
+
+    .items-statistic a {
+        background: var(--blue);
+        border-radius: 7px;
+        width: 200px;
+        height: 43px;
+        font-size: 14px;
+        color: var(--white);
+    }
+
+    .items-btn {
+        display: none;
+    }
+
+    .items-link a {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    .popular {
+        margin-top: 50px;
+    }
 }

@@ -32,7 +32,7 @@
     position: absolute;
     width: 100%;
     height: 1px;
-    background:  var(--gray-shape);
+    background: var(--gray-shape);
     bottom: 0;
     left: 0;
     content: '';
@@ -40,13 +40,79 @@
 
 /*catalog*/
 
+.catalog {
+    margin-top: 70px;
+}
+
+.catalog-wrapper {
+    gap: 0;
+    justify-content: space-between;
+}
+
+.catalog-wrapper a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    color: #000;
+    transition: all 0.3s ease;
+}
+
+.catalog-wrapper a:hover {
+    color: var(--blue);
+}
+
+.catalog-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.catalog-wrapper a:hover svg path {
+    stroke: var(--blue);
+}
+
 /*info*/
 
+.info {
+    margin-top: 100px;
+}
 
+.about-wrapper {
+    margin-top: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
 
+.about-wrapper .about-desc {
+    margin-top: 0;
+    max-width: 1091px;
+}
 
+.about-wrapper a {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
+    transition: all 0.3s ease;
+}
 
+.about-wrapper a:hover {
+    color: var(--blue);
+}
 
+.about-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.about-wrapper a:hover svg path {
+    stroke: var(--blue);
+}
 
 /*dealers*/
 
@@ -59,7 +125,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 20px 18px;
+    gap: 18px;
 }
 
 .dealers-list li {
@@ -73,105 +139,126 @@
     justify-content: center;
 }
 
-    /*information*/
+.dealers-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
 
+.dealers-wrapper a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
+}
 
-/*consultation*/
+.dealers-wrapper a:hover {
+    color: var(--blue);
+}
 
-.consultation {
+.dealers-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.dealers-wrapper a:hover svg path {
+    stroke: var(--blue);
+}
+
+/*information*/
+
+.rfa {
     margin-top: 100px;
 }
 
-.consultation-wrapper {
-    padding: 80px 100px;
+.rfa-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rfa-wrapper a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
+}
+
+.rfa-wrapper a:hover {
+    color: var(--blue);
+}
+
+.rfa-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.rfa-wrapper a:hover svg path {
+    stroke: var(--blue);
+}
+
+.rfa-desc {
+    margin-top: 40px;
+    font-weight: 600;
+    font-size: 23px;
+    color: var(--black-text);
+}
+
+/*consultation*/
+
+.request {
+    margin-top: 100px;
+    background: none;
+    padding: 0;
+}
+
+.request-wrapper {
+    padding: 80px 0 80px 100px;
     background: var(--blue);
-    border-radius: 25px;
     position: relative;
+    border-radius: 25px;
 }
 
-.consultation-wrapper img {
-    position: absolute;
-    right: 64px;
+.request-png {
+    width: 718px;
     bottom: 141px;
+    right: 64px;
 }
 
-.consultation-img {
-    right: 0 !important;
-    bottom: 0 !important;
+.request-png img {
+    width: 100%;
 }
 
-.consultation-title {
+.request .title {
     font-weight: 600;
     font-size: 40px;
-    line-height: 1.3;
+    line-height: 130%;
     letter-spacing: -0.01em;
     color: var(--white);
-    max-width: 980px;
+    max-width: 894px;
 }
 
-.consultation-desc {
+.request-svg {
+    bottom: 0;
+    top: auto;
+}
+
+.request-politics {
+    color: var(--gray-text);
+}
+
+.request-desc {
     margin-top: 20px;
     font-weight: 400;
     font-size: 20px;
-    line-height: 1.35;
-    color: var(--white);
-}
-
-.consultation-form {
-    margin-top: 35px;
-    max-width: 547px;
-    display: flex;
-    gap: 10px;
-    flex-direction: column;
-}
-
-.consultation-form input {
-    background: var(--gray-form);
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--gray-base);
-    border-radius: 10px;
-    height: 60px;
-    padding-left: 25px;
-}
-
-.consultation-form textarea {
-    background: var(--gray-form);
-    font-weight: 500;
-    font-size: 16px;
-    color: var(--gray-base);
-    border-radius: 10px;
-    height: 140px;
-    padding-top: 20px;
-    padding-left: 25px;
-    font-family: 'SF Pro Display', sans-serif;
-}
-
-.consultation-form button {
-    background: var(--sky-blue);
-    font-weight: 600;
-    font-size: 18px;
-    text-align: center;
-    color: #fff;
-    border-radius: 10px;
-    height: 60px;
-}
-
-.consultation-check {
-    margin-top: 5px;
-    display: flex;
-    gap: 7px;
-    align-items: center;
-    font-weight: 400;
-    font-size: 14px;
     line-height: 135%;
-    color: #fff;
-    text-decoration: underline;
-    text-decoration-skip-ink: none;
-}
-
-.consultation-check input {
-    height: auto;
+    color: var(--white);
 }
 
 /*news*/
@@ -180,56 +267,36 @@
     margin-top: 100px;
 }
 
-.news-list {
-    margin-top: 40px;
+.news-wrapper {
     display: flex;
-    gap: 20px;
-    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
-.news-list li {
-    max-width: 358px;
-    width: 100%;
-    border: 1px solid var(--gray-shape);
-    border-radius: 15px;
-    padding: 8px 1px 15px 2px;
-    display: flex;
-    flex-direction: column;
-}
-
-.news-list span {
-    margin-top: 15px;
-    display: block;
-    font-weight: 400;
-    padding-left: 15px;
-    font-size: 15px;
-    line-height: 1.35;
-    color: var(--gray-base);
-}
-
-.news-list p {
-    margin-top: 12px;
-    padding-left: 15px;
-    padding-right: 15px;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 1.35;
-    margin-bottom: 12px;
-}
-
-.news-list a {
-    border-radius: 5px;
-    border: 1px solid var(--gray-shape);
-    width: 40px;
-    height: 40px;
+.news-wrapper a {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-left: 15px;
-    margin-top: auto;
+    gap: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
 }
 
-    /*videos*/
+.news-wrapper a:hover {
+    color: var(--blue);
+}
+
+.news-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.news-wrapper a:hover svg path {
+    stroke: var(--blue);
+}
+
+/*videos*/
 
 .videos {
     margin-top: 100px;
@@ -261,26 +328,114 @@
     font-size: 18px;
     line-height: 1.35;
 }
+
+.videos-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.videos-wrapper a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
+}
+
+.videos-wrapper a:hover {
+    color: var(--blue);
+}
+
+.videos-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.videos-wrapper a:hover svg path {
+    stroke: var(--blue);
+}
+
 /*answers*/
 
 .answers {
     margin-top: 100px;
 }
 
-.answers-list {
+.accordion {
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
 
-.answers-list li {
+.ac-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px;
+    background: var(--gray-shape-2);
+    padding: 20px 25px;
+}
+
+.ac-title {
     font-weight: 600;
     font-size: 20px;
-    line-height: 1.35;
-    padding: 20px 25px 20px 25px;
-    background: var(--gray-shape-2);
-    border-radius: 15px;
+    line-height: 135%;
+    color: var(--black-text);
+}
+
+.ac-arrow {
+    transition: transform 0.3s ease;
+}
+
+.ac-body {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: all 0.35s ease;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: var(--black-text);
+    margin-top: 0;
+}
+
+.ac-item.active .ac-body {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 25px;
+    padding-left: 25px;
+    padding-bottom: 25px;
+    padding-right: 65px;
+    border-bottom: 1px solid var(--gray-shape);
+}
+
+.ac-item.active .ac-arrow {
+    transform: rotate(180deg);
+}
+
+.answers-btn {
+    margin: 50px auto 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--blue);
+    border: 1px solid var(--blue);
+    border-radius: 10px;
+    width: 230px;
+    height: 55px;
+    transition: all 0.3s ease;
+}
+
+.answers-btn:hover {
+    color: var(--white);
+    background: var(--blue);
 }
 
 /*webinars*/
@@ -322,205 +477,655 @@
     line-height: 1.35;
 }
 
+.webinars-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.webinars-wrapper a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 130%;
+    text-align: right;
+    color: #000;
+}
+
+.webinars-wrapper a:hover {
+    color: var(--blue);
+}
+
+.webinars-wrapper a svg path {
+    transition: all 0.3s ease;
+}
+
+.webinars-wrapper a:hover svg path {
+    stroke: var(--blue);
+}
+
+.contacts {
+    margin-top: 100px;
+}
 
 
 @media screen and (max-width: 1492px) {
+    /*main*/
+    .first-slider {
+        max-width: 769px;
+    }
+
+    .second-slider {
+        width: 393px;
+        height: 400px;
+    }
+
+    .main-title {
+        font-size: 43px;
+    }
+
+    /*catalog*/
+    /*info*/
+    .about-wrapper .about-desc {
+        margin-top: 0;
+        max-width: 951px;
+    }
+
+    /*dealers*/
+    .dealers-list {
+        gap: 14px;
+    }
+
+    .dealers-list li {
+        max-width: 284px;
+        height: 174px;
+    }
 
     /*information*/
-
     /*consultation*/
-
-    .consultation {
-        margin-top: 100px;
+    .request-wrapper {
+        padding: 60px 0 100px 70px;
     }
 
-    .consultation-wrapper {
-        padding: 80px 100px;
-        background: var(--blue);
-        border-radius: 25px;
-        position: relative;
+    .request-png {
+        width: 507px;
+        bottom: 191px;
+        right: 23px;
     }
 
-    .consultation-wrapper img {
-        position: absolute;
-        right: 64px;
-        bottom: 141px;
+    .request-png img {
+        width: 100%;
     }
 
-    .consultation-img {
-        right: 0 !important;
-        bottom: 0 !important;
+    .request-svg {
+        bottom: 0;
+        top: auto;
     }
 
-    .consultation-title {
-        font-weight: 500;
-        font-size: 36px;
-    }
-
-    .consultation-desc {
-        margin-top: 20px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.35;
+    .request-politics {
         color: var(--white);
     }
 
-    .consultation-form {
-        margin-top: 35px;
-        max-width: 547px;
-        display: flex;
-        gap: 10px;
-        flex-direction: column;
-    }
-
     /*news*/
-
-    .news {
-        margin-top: 100px;
+    .news-list li:nth-child(4) {
+        display: none;
     }
 
-    .news-list li {
+    /*videos*/
+    .videos-list li {
         max-width: 380px;
-        padding: 8px 23px 15px 2px;
     }
 
-    .news-list p {
-        padding-right: 26px;
+    .videos-list video {
+        height: 236px;
     }
 
+    /*answers*/
+    /*webinars*/
+    .webinars-list li {
+        max-width: 380px;
+    }
 
+    .webinars-list video {
+        height: 236px;
+    }
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
+    /*main*/
+    .main-sliders {
+        margin-top: 30px;
+        gap: 16px;
+    }
 
+    .first-slider {
+        max-width: 594px;
+    }
+
+    .second-slider {
+        width: 350px;
+        height: 309px;
+    }
+
+    .main-title {
+        margin-top: 20px;
+        font-size: 29px;
+        padding-bottom: 40px;
+    }
+
+    /*catalog*/
+    .catalog {
+        margin-top: 40px;
+    }
+
+    .catalog-wrapper a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .catalog-wrapper a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*info*/
+    .info {
+        margin-top: 70px;
+    }
+
+    .about-wrapper {
+        margin-top: 40px;
+    }
+
+    .about-wrapper .about-desc {
+        margin-top: 0;
+        max-width: 773px;
+    }
+
+    .about-wrapper a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .about-wrapper a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*dealers*/
+    .dealers {
+        margin-top: 70px;
+    }
+
+    .dealers-list {
+        margin-top: 30px;
+        gap: 16px;
+    }
+
+    .dealers-list li {
+        max-width: 228px;
+        height: 140px;
+    }
+
+    .dealers-wrapper a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .dealers-wrapper a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*information*/
+    .rfa {
+        margin-top: 70px;
+    }
+
+    .rfa-wrapper a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .rfa-wrapper a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .rfa-desc {
+        margin-top: 25px;
+        font-size: 20px;
+    }
 
     /*consultation*/
-
-    .consultation {
-        margin-top: 100px;
+    .request-wrapper {
+        padding: 50px 0 60px 60px;
     }
 
-    .consultation-wrapper {
-        padding: 80px 100px;
-        background: var(--blue);
-        border-radius: 25px;
-        position: relative;
+    .request-png {
+        display: none;
     }
 
-    .consultation-wrapper img {
-        position: absolute;
-        right: 64px;
-        bottom: 141px;
+    .request .title {
+        font-size: 26px;
+        max-width: 600px;
     }
 
-    .consultation-img {
-        right: 0 !important;
-        bottom: 0 !important;
-    }
-
-    .consultation-title {
-        font-weight: 600;
-        font-size: 20px;
-        max-width: 980px;
-    }
-
-    .consultation-desc {
-        margin-top: 20px;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 1.35;
+    .request-politics {
         color: var(--white);
     }
 
-    .consultation-form {
-        margin-top: 20px;
-        max-width: 100%;
-        gap: 8px;
-    }
-
-    .consultation-form input {
-        font-size: 14px;
-        height: 55px;
-        padding-left: 20px;
-    }
-
-    .consultation-form textarea {
-        font-size: 14px;
-        height: 150px;
-        padding-left: 20px;
-    }
-
-    .consultation-form button {
-        font-weight: 500;
-        font-size: 14px;
-        height: 55px;
-    }
-
-    .consultation-check {
-        margin-top: 4px;
-        font-size: 10px;
-    }
-
-    .consultation-check input {
-        height: auto;
+    .request-desc {
+        font-size: 18px;
     }
 
     /*news*/
+    .news {
+        margin-top: 70px;
+    }
 
+    .news-wrapper a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .news-wrapper a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*videos*/
+    .videos {
+        margin-top: 70px;
+        padding: 50px 0 60px 0;
+    }
+
+    .videos-list {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .videos-list li {
+        max-width: 310px;
+    }
+
+    .videos-list video {
+        margin-bottom: 10px;
+        height: 210px;
+    }
+
+    .videos-list p {
+        font-size: 16px;
+    }
+
+    .videos-wrapper a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .videos-wrapper a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    /*answers*/
+    .answers {
+        margin-top: 70px;
+    }
+
+    .accordion {
+        margin-top: 30px;
+        gap: 10px;
+    }
+
+    .ac-header {
+        border-radius: 10px;
+        padding: 20px 20px 22px 25px;
+    }
+
+    .ac-title {
+        font-size: 18px;
+    }
+
+    .ac-body {
+        font-size: 16px;
+    }
+
+    .ac-item.active .ac-body {
+        max-height: 500px;
+        opacity: 1;
+        margin-top: 20px;
+        padding-left: 25px;
+        padding-bottom: 20px;
+        padding-right: 65px;
+    }
+
+    .answers-btn {
+        margin: 35px auto 0;
+        font-size: 16px;
+        border-radius: 10px;
+        width: 228px;
+        height: 45px;
+    }
+
+    /*webinars*/
+    .webinars {
+        margin-top: 70px;
+    }
+
+    .webinars-list {
+        margin-top: 30px;
+        gap: 15px;
+    }
+
+    .webinars-list li {
+        max-width: 310px;
+    }
+
+    .webinars-list video {
+        margin-bottom: 10px;
+        height: 210px;
+    }
+
+    .webinars-list p {
+        margin-top: 3px;
+        font-size: 16px;
+    }
+
+    .webinars-wrapper a {
+        gap: 3px;
+        font-size: 16px;
+    }
+
+    .webinars-wrapper a svg {
+        width: 15px;
+        height: 15px;
+    }
+
+    .contacts {
+        margin-top: 70px;
+    }
+
+}
+
+
+@media screen and (max-width: 768px) {
+    /*main*/
+    .main-sliders {
+        margin-top: 15px;
+    }
+
+    .first-slider {
+        max-width: none;
+        width: 100%;
+    }
+
+    .first-slider img {
+        width: 100%;
+    }
+
+    .second-slider {
+        display: none;
+    }
+
+    .main-title {
+        margin-top: 20px;
+        font-size: 22px;
+        padding-bottom: 25px;
+    }
+
+    /*catalog*/
+    .catalog {
+        margin-top: 25px;
+    }
+
+    .catalog-wrapper {
+        flex-direction: row;
+    }
+
+    .catalog-wrapper a {
+        gap: 3px;
+        font-size: 12px;
+
+    }
+
+    /*info*/
+    .info {
+        margin-top: 50px;
+    }
+
+    .about-wrapper {
+        margin-top: 30px;
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    .about-wrapper a {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    /*dealers*/
+    .dealers {
+        margin-top: 50px;
+    }
+
+    .dealers-list {
+        margin-top: 20px;
+        gap: 9px;
+    }
+
+    .dealers-list li {
+        border-radius: 10px;
+        max-width: 160px;
+        height: 98px;
+    }
+
+    .dealers-wrapper a {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    /*information*/
+    .rfa {
+        margin-top: 50px;
+    }
+
+    .rfa-wrapper a {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    .rfa-wrapper .title {
+        max-width: 160px;
+    }
+
+    .rfa-desc {
+        margin-top: 10px;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    /*consultation*/
+    .request {
+        margin-top: 50px;
+    }
+
+    .request-wrapper {
+        padding: 40px 15px 306px 15px;
+        border-radius: 0;
+    }
+
+    .request-png {
+        display: block;
+        width: 328px;
+        bottom: 91px;
+        right: 50%;
+        transform: translateX(-50%);
+    }
+
+    .request-png img {
+        width: 100%;
+    }
+
+    .request .title {
+        font-size: 20px;
+    }
+
+    .request-svg {
+        bottom: 0;
+        top: auto;
+    }
+
+    .request-politics {
+        color: var(--white);
+    }
+
+    .request-desc {
+        margin-top: 15px;
+        font-weight: 500;
+        font-size: 15px;
+    }
+
+    /*news*/
     .news {
         margin-top: 50px;
     }
 
-    .news-list {
-        margin-top: 40px;
-        display: flex;
-        gap: 20px;
-        flex-wrap: wrap;
+    .news-wrapper a {
+        gap: 3px;
+        font-size: 12px;
     }
 
-    .news-list li {
-        max-width: 358px;
-        width: 100%;
-        border: 1px solid var(--gray-shape);
-        border-radius: 15px;
-        padding: 8px 1px 15px 2px;
-        display: flex;
+    /*videos*/
+    .videos {
+        margin-top: 50px;
+        padding: 30px 0 40px 0;
+    }
+
+    .videos-list {
+        margin-top: 20px;
+        gap: 15px;
         flex-direction: column;
     }
 
-    .news-list span {
-        margin-top: 15px;
-        display: block;
-        font-weight: 400;
-        padding-left: 15px;
-        font-size: 15px;
-        line-height: 1.35;
-        color: var(--gray-base);
+    .videos-list li {
+        max-width: none;
+        width: 100%;
     }
 
-    .news-list p {
-        margin-top: 12px;
-        padding-left: 15px;
-        padding-right: 15px;
+    .videos-list video {
+        margin-bottom: 10px;
+        width: 100%;
+        border-radius: 10px;
+        height: 185px;
+    }
+
+    .videos-list p {
+        font-size: 14px;
+    }
+
+    .videos-wrapper a {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    /*answers*/
+    .answers {
+        margin-top: 50px;
+    }
+
+    .accordion {
+        margin-top: 20px;
+        gap: 5px;
+    }
+
+    .ac-header {
+        border-radius: 10px;
+        padding: 15px 15px 17px 15px;
+    }
+
+    .ac-title {
         font-weight: 500;
-        font-size: 18px;
-        line-height: 1.35;
-        margin-bottom: 12px;
+        font-size: 14px;
     }
 
-    .news-list a {
-        border-radius: 5px;
-        border: 1px solid var(--gray-shape);
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-left: 15px;
-        margin-top: auto;
+    .ac-arrow {
+        transition: transform 0.3s ease;
     }
 
+    .ac-arrow svg {
+        fill: var(--blue);
+    }
+
+    .ac-arrow svg path {
+        stroke: var(--white);
+    }
+
+    .ac-body {
+        font-size: 14px;
+    }
+
+    .ac-item.active .ac-body {
+        margin-top: 15px;
+        padding-left: 15px;
+        padding-bottom: 15px;
+        padding-right: 15px;
+    }
+
+    .answers-btn {
+        margin: 30px auto 0;
+        font-size: 14px;
+        color: var(--white);
+        border-radius: 7px;
+        width: 200px;
+        height: 43px;
+        background: var(--blue);
+    }
+
+    /*webinars*/
+    .webinars {
+        margin-top: 50px;
+    }
+
+    .webinars-list {
+        margin-top: 20px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .webinars-list li {
+        max-width: none;
+        width: 100%;
+    }
+
+    .webinars-list video {
+        margin-bottom: 10px;
+        width: 100%;
+        border-radius: 10px;
+        height: 185px;
+    }
+
+    .webinars-list span {
+        font-size: 12px;
+    }
+
+    .webinars-list p {
+        margin-top: 6px;
+        font-size: 14px;
+    }
+
+    .webinars-wrapper a {
+        gap: 3px;
+        font-size: 12px;
+    }
+
+    .contacts {
+        margin-top: 50px;
+    }
 
 
 }
