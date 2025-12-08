@@ -25,8 +25,8 @@ document.addEventListener("DOMContentLoaded", () => {
         new Swiper('.information-slider', {
             slidesPerView: 'auto',
             spaceBetween: 10,
-            allowTouchMove: true,
-            slideToClickedSlide: true,
+            // allowTouchMove: true,
+            // slideToClickedSlide: true,
             loop: false,
         });
     }

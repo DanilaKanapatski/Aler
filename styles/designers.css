@@ -461,6 +461,7 @@
     .information-list {
         margin-top: 20px;
         display: flex;
+        flex-wrap: nowrap;
     }
 
     .information-list img {
@@ -522,19 +523,18 @@
         padding: 12px 0 12px 12px;
     }
 
+    .stp-list li>svg {
+        width: 26px;
+        height: 28px;
+    }
+
     .stp-list li p {
         margin-bottom: 5px;
         font-size: 14px;
     }
 
     .stp-list li a {
-        font-weight: 500;
-        font-size: 18px;
-        line-height: 130%;
-        display: flex;
-        gap: 1px;
-        color: var(--blue);
-
+        font-size: 14px;
     }
 
     .stp-list li a svg {
