@@ -65,6 +65,11 @@ body {
     color: var(--black-text);
 }
 
+main {
+    background: var(--white);
+
+}
+
 .container {
     max-width: 1492px;
     margin: 0 auto;

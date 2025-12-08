@@ -450,7 +450,7 @@
 
     .information-slider {
         overflow: hidden;
-        padding-right: 10px;
+        /*padding-right: 10px;*/
     }
 
     .information-list li.swiper-slide {
@@ -461,6 +461,7 @@
     .information-list {
         margin-top: 20px;
         display: flex;
+        gap: 0;
         flex-wrap: nowrap;
     }
 
@@ -469,9 +470,12 @@
     }
 
     .information-list li {
-        max-width: 260px;
+        /*max-width: none;*/
+        max-width: 260px !important;
+        width: 100%;
         height: 295px;
         padding-bottom: 20px;
+        flex-shrink: 0;
     }
 
     .information-list li div {
@@ -503,6 +507,7 @@
 
     .rfa {
         margin-top: 40px;
+        /*background: var(--gray-base);*/
     }
 
     /*3d*/
