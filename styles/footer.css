@@ -5,7 +5,8 @@
 
 .footer-wrapper {
     display: flex;
-    gap: 64px;
+    gap: 20px;
+    justify-content: space-between;
 }
 
 .footer-lists {
@@ -15,7 +16,7 @@
 }
 
 .footer-contacts {
-    max-width: 319px;
+    max-width: 365px;
     width: 100%;
 }
 
