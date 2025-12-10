@@ -91,48 +91,65 @@ document.addEventListener('click', e => {
     }
 });
 
-// Открытие/закрытие основного каталога
 const catalogBtn = document.querySelector('.header-catalog');
 const catalogOverlay = document.querySelector('.catalog-overlay');
 const catalogClose = document.querySelector('.close-catalog');
+const catalogBlock = document.querySelector('.catalog-block');
 
+const leftItems = document.querySelectorAll('.catalog-block > ul > li');
+
+// Открытие каталога
 catalogBtn.addEventListener('click', () => {
     catalogOverlay.classList.add('open');
+    document.body.style.overflow = "hidden";
 });
 
+// Закрытие по крестику
 catalogClose.addEventListener('click', () => {
     catalogOverlay.classList.remove('open');
+    document.body.style.overflow = "";
 });
 
-// Открытие правого подменю
-const leftItems = document.querySelectorAll('.catalog-overlay ul li');
-const submenu = document.createElement('div');
-submenu.className = 'catalog-submenu';
-catalogOverlay.querySelector('div').appendChild(submenu);
+// Закрытие по клику вне блока
+catalogOverlay.addEventListener('click', (e) => {
+    if (!catalogBlock.contains(e.target)) {
+        catalogOverlay.classList.remove('open');
+        document.body.style.overflow = "";
+    }
+});
 
-leftItems.forEach((li, index) => {
+// Клик по левым пунктам
+leftItems.forEach(li => {
     li.addEventListener('click', () => {
-        leftItems.forEach(el => el.classList.remove('active'));
+
+        // убираем актив со всех
+        leftItems.forEach(i => {
+            i.classList.remove('active');
+
+            const sm = i.querySelector('.catalog-submenu');
+            if (sm) sm.classList.remove('open');
+        });
+
+        // ставим актив текущему
         li.classList.add('active');
 
-        // Генерация правого меню (пример — поменяешь под себя)
-        submenu.innerHTML = `
-            <ul>
-                <li><a href="#">Пункт 1 для ${index + 1}</a></li>
-                <li><a href="#">Пункт 2 для ${index + 1}</a></li>
-                <li><a href="#">Пункт 3 для ${index + 1}</a></li>
-                <li><a href="#">Пункт 4 для ${index + 1}</a></li>
-            </ul>
-        `;
-        submenu.classList.add('open');
+        // открываем его подменю (если есть)
+        const submenu = li.querySelector('.catalog-submenu');
+        if (submenu) submenu.classList.add('open');
     });
 });
-catalogBtn.addEventListener('click', () => {
-    catalogOverlay.classList.add('open');
-    document.body.style.overflow = "hidden"; /* 🔥 */
-});
 
-catalogClose.addEventListener('click', () => {
-    catalogOverlay.classList.remove('open');
-    document.body.style.overflow = ""; /* вернуть */
+const headerWrapper = document.querySelector('.header-wrapper');
+const headerInfo = document.querySelector('.header-info');
+
+const wrapperOffset = headerWrapper.offsetTop;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= wrapperOffset) {
+        headerWrapper.classList.add('is-fixed');
+        headerInfo.style.paddingTop = headerWrapper.offsetHeight + 'px';
+    } else {
+        headerWrapper.classList.remove('is-fixed');
+        headerInfo.style.paddingTop = '0px';
+    }
 });
