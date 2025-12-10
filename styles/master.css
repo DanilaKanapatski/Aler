@@ -138,6 +138,16 @@
     color: var(--blue);
 }
 
+.filter.selected .filter-title {
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.filter.selected .filter-head {
+    padding-bottom: 0;
+}
+
+
 .filter-title{
     font-weight: 500;
     font-size: 16px;

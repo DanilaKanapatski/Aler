@@ -157,7 +157,7 @@
 .header-tel-dropdown {
     position: absolute;
     top: -50%; /* отступ 12px */
-    left: -24px;
+    left: -27px;
     /*width: 100%;*/
     box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
     background: #fff;
@@ -166,7 +166,7 @@
     z-index: 20;
     border: 1px solid var(--gray-shape);
     border-radius: 10px;
-    width: 227px;
+    width: 229px;
 }
 
 .header-tel-dropdown a {
