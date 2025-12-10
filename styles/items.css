@@ -219,6 +219,28 @@
         border-radius: 10px;
     }
 
+    .items-list li img {
+        width: 200px;
+    }
+
+    .items-list {
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .items-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .items-list li {
+        flex: 0 0 280px; /* фиксированная ширина карточки */
+        scroll-snap-align: start;
+    }
+
     .items-list li.visible {
         display: block; /* показывать видимые */
     }

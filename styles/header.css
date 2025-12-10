@@ -41,12 +41,89 @@
     font-weight: 500;
     font-size: 18px;
     color: var(--black-text);
+    transition: all 0.3s ease;
 }
 
-.header-info {
+.header-nav a:hover {
+    color: var(--blue);
+}
+
+.nav-btn {
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--black-text);
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    transition: all .3s ease;
+}
+
+.nav-btn:hover .arrow path{
+    fill: var(--blue);
+}
+
+.nav-btn:hover {
+    color: var(--blue);
+}
+
+    /* стрелка */
+.nav-btn .arrow {
+    transition: all .3s ease;
+}
+
+.nav-btn.active .arrow {
+    transform: rotate(180deg);
+}
+
+/* скрытый список */
+.dropdown {
+    display: none;
+    flex-direction: column;
+    margin-top: 12px;
+    padding: 0;
+    border-radius: 10px;
+    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+    background: #fff;
+    border: 1px solid var(--gray-shape);
+    position: absolute;
+    z-index: 20;
+    width: 240%;
+}
+
+.dropdown li a {
+    padding: 12px 0 12px 20px;
+    display: block;
+    font-weight: 400;
+    font-size: 18px;
+    color: var(--black-text);
+    transition: all 0.3s ease;
+}
+
+.dropdown li a:hover {
+    background: var(--gray-shape);
+    color: var(--black-text);
+}
+
+.has-dropdown {
+    position: relative;
+}
+
+.header-wrapper {
     padding: 28px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    gap: 57px;
+}
+
+.header-block {
+    display: flex;
+    gap: 20px;
     align-items: center;
 }
 
@@ -54,6 +131,73 @@
     font-weight: 500;
     font-size: 22px;
     color: var(--black-text);
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.header-tel-wrap {
+    position: relative;
+    display: inline-block;
+}
+
+.header-tel-dropdown {
+    position: absolute;
+    top: -50%; /* отступ 12px */
+    left: -24px;
+    /*width: 100%;*/
+    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+    background: #fff;
+    display: none;
+    flex-direction: column;
+    z-index: 20;
+    border: 1px solid var(--gray-shape);
+    border-radius: 10px;
+    width: 227px;
+}
+
+.header-tel-dropdown a {
+    padding: 12px 13.5px;
+    font-weight: 500;
+    font-size: 22px;
+    color: var(--black-text);
+    transition: all 0.3s ease;
+}
+
+.header-tel-dropdown a:hover {
+    background: var(--gray-shape-2);
+}
+
+.header-tel:hover {
+    color: var(--blue);
+}
+
+.header-tel:hover svg path {
+    fill: var(--blue);
+}
+
+.header-tel svg path {
+    transition: all 0.3s ease;
+}
+
+.search-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 547px; /* можно изменить */
+}
+
+.search-icon {
+    position: absolute;
+    right: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    transition: stroke 0.2s ease;
+}
+
+.search-wrapper:hover .search-icon path {
+    stroke: var(--blue); /* синяя при наведении */
 }
 
 .header-search {
@@ -64,10 +208,69 @@
     padding-left: 20px;
     font-weight: 400;
     font-size: 16px;
+    color: var(--black-text);
+}
+
+.header-search::placeholder {
+    font-weight: 400;
+    font-size: 16px;
     color: var(--gray-text);
 }
 
-.header-btn {
+/* ПОДСКАЗКИ */
+.search-results {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none; /* скрыто пока пользователь не ввел текст */
+    z-index: 200;
+}
+
+.search-item {
+    padding: 15px 0 12px 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+    cursor: pointer;
+    border: 1px solid var(--gray-shape);
+    border-radius: 10px;
+    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+    background: var(--gray-form);
+    transition: all 0.3s ease;
+}
+
+.search-name {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--black-text);
+}
+
+.search-price {
+    font-weight: 500;
+    font-size: 16px;
+    color: var(--black-text);
+}
+
+.search-item:hover {
+    box-shadow: 0 1px 99px 0 rgba(22, 22, 22, 0.04), 0 17px 39px 0 rgba(22, 22, 22, 0.02);
+    background: var(--gray-shape);
+}
+
+.header-search::-webkit-search-decoration,
+.header-search::-webkit-search-results-button,
+.header-search::-webkit-search-results-decoration {
+    display: none;
+}
+
+/* Убираем стандартный крестик очистки в Chrome/Safari */
+.header-search::-webkit-search-cancel-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+
+.header-catalog {
     font-weight: 600;
     font-size: 18px;
     color: var(--white);
@@ -76,14 +279,122 @@
     width: 147px;
     height: 60px;
     background: var(--blue);
+    display: flex;
+    gap: 7px;
+    align-items: center;
+    transition: all 0.3s ease;
 }
 
-.header-statistic {
-    font-weight: 400;
-    font-size: 16px;
-    text-align: center;
-    color: var(--black-text);
+.header-catalog:hover {
+    background: #244e9c;
 }
+
+.catalog-overlay {
+    position: fixed;
+    background: rgba(22, 22, 22, 0.6);
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    visibility: hidden;
+    transition: 0.3s;
+    /*display: flex;*/
+    /*justify-content: center;*/
+    z-index: 200;
+    overflow-y: auto; /* ← ВАЖНО */
+}
+
+.catalog-overlay.open {
+    opacity: 1;
+    visibility: visible;
+}
+
+.catalog-block {
+    background: #fff;
+    width: 925px;
+    border-radius: 25px;
+    display: flex;
+    position: relative;
+    top: 176px;
+    left: 0;
+}
+
+.catalog-overlay ul {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.catalog-overlay ul li {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    cursor: pointer;
+    transition: 0.2s;
+    height: 96px;
+    background: var(--gray-shape-2);
+}
+
+.catalog-overlay ul li:first-child{
+    border-radius: 20px 20px 0 20px;
+}
+
+.catalog-overlay ul li:last-child {
+    border-radius: 20px 20px 0 20px;
+}
+
+.catalog-block ul li p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 130%;
+    color: var(--black-text);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 27px;
+    width: 80%;
+}
+
+.catalog-img-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 121px;
+}
+
+.catalog-img-wrapper div {
+    width: 121px;
+}
+
+.catalog-overlay ul li.active {
+    background: #f3f3f3;
+}
+
+.catalog-submenu {
+    width: 300px;
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.3s;
+}
+
+.catalog-submenu.open {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.catalog-submenu ul {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.close-catalog {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+}
+
 
 @media screen and (max-width: 1492px) {
 

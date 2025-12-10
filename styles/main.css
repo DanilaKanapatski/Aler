@@ -920,7 +920,8 @@
 
     .dealers-list li {
         border-radius: 10px;
-        max-width: 160px;
+        max-width: none;
+        width: 48%;
         height: 98px;
     }
 
@@ -1127,5 +1128,62 @@
         margin-top: 50px;
     }
 
+/*    news*/
+
+    .news-list {
+        overflow-x: auto;
+        gap: 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
+        flex-wrap: nowrap;
+    }
+
+    .news-list li {
+        max-width: 280px;
+        width: 100%;
+        border: 1px solid var(--gray-shape);
+        border-radius: 10px;
+        padding: 10px 21px 15px 15px;
+    }
+
+    .news-list::-webkit-scrollbar {
+        display: none;
+    }
+
+    .news-list li {
+        flex: 0 0 280px; /* фиксированная ширина карточки */
+        scroll-snap-align: start;
+    }
+
+    .news-list li img {
+        width: 235px;
+    }
+
+    .news-list span {
+        margin-top: 20px;
+    }
+    
+    .news-list a {
+        margin-top: 12px;
+        display: flex;
+        width: 30px;
+        height: 30px;
+        background: var(--blue);
+    }
+
+    .news-list a svg path {
+        stroke: var(--white);
+        width: 5px;
+        height: 11px;
+    }
+
+    .news-list a svg {
+        width: 7px;
+        height: 13px;
+    }
+
+    .news-list li:nth-child(4) {
+        display: block;
+    }
 
 }

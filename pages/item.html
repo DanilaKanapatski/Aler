@@ -49,7 +49,7 @@
 </header>
 <main>
     <div class="container">
-        <div class="links"><a href="">Главная</a>
+        <div class="links item-links"><a href="">Главная</a>
             <span>/</span>
             <a href="">Каталог</a>
             <span>/</span>
@@ -58,6 +58,9 @@
             <a href="">AL-400 PRemium</a>
         </div>
         <h2 class="title">AL-400 PRemium</h2>
+    </div>
+    <div class="overlay">
+
     </div>
     <section class="item">
         <div class="container">
@@ -76,8 +79,83 @@
                     <span class="item-price">15 610 руб.</span>
                     <p class="item-desc">Изделие поставляется с постоянно присоединенным кабелем.</p>
                     <div class="item-btn">
-                        <button>Оставить заявку</button>
-                        <button>Задать вопрос</button>
+                        <!-- Кнопка -->
+                        <button class="open-popup-request">Оставить заявку</button>
+
+                        <!-- Попап -->
+                        <div class="popup-overlay-request">
+                            <div class="popup-request">
+                                <button class="popup-close-request">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.5 7.5L7.5 22.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.5 7.5L22.5 22.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+
+                                <h3 class="popup-title-request">Оставить заявку на заказ товара</h3>
+
+                                <form class="popup-form-request">
+                                    <label>
+                                        <input class="input" type="text" required placeholder="Ваше имя*">
+                                    </label>
+
+                                    <label>
+                                        <input class="input" type="tel" required placeholder="Телефон*">
+                                    </label>
+
+                                    <label>
+                                        <input class="input" type="email" placeholder="E-mail">
+                                    </label>
+
+                                    <label>
+                                        <textarea class="textarea" placeholder="Комментарий"></textarea>
+                                    </label>
+
+                                    <button type="submit" class="send-btn-request">Отправить</button>
+
+                                    <label class="policy"><input type="checkbox">Я согласен с условиями <a href="">политики конфиденциальных
+                                        данных</a></label>
+                                </form>
+                            </div>
+                        </div>
+                        <button class="open-popup-question">Задать вопрос</button>
+                        <!-- Попап -->
+                        <div class="popup-overlay-question">
+                            <div class="popup-question">
+                                <button class="popup-close-question">
+                                    <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M22.5 7.5L7.5 22.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                        <path d="M7.5 7.5L22.5 22.5" stroke="#161616" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                </button>
+
+                                <h3 class="popup-title-question">Задать вопрос</h3>
+                                <p class="popup-desc-question">Оставьте контактные данные, мы свяжемся с вами в ближайшее время</p>
+
+                                <form class="popup-form-question">
+                                    <label>
+                                        <input class="input" type="text" required placeholder="Ваше имя*">
+                                    </label>
+
+                                    <label>
+                                        <input class="input" type="tel" required placeholder="Телефон*">
+                                    </label>
+
+                                    <label>
+                                        <input class="input" type="email" placeholder="E-mail">
+                                    </label>
+
+                                    <label>
+                                        <textarea class="textarea" placeholder="Ваш вопрос"></textarea>
+                                    </label>
+
+                                    <button type="submit" class="send-btn-question">Отправить</button>
+
+                                    <label class="policy"><input type="checkbox">Я согласен с условиями <a href="">политики конфиденциальных
+                                        данных</a></label>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                     <ul class="item-list">
                         <li>Условия эксплуатации — <span>В помещении</span></li>
@@ -137,6 +215,86 @@
                             <li>
                                 <span>СИД </span>
                                 <span>Да</span>
+                            </li>
+                            <li>
+                                <span>Цвет</span>
+                                <span>Белый</span>
+                            </li>
+                            <li>
+                                <span>Диапазон рабочих температур (°С)</span>
+                                <span>-20…+40</span>
+                            </li>
+                            <li>
+                                <span>Влагозащищенность</span>
+                                <span>Нет</span>
+                            </li>
+                            <li>
+                                <span>Степень защиты, IP</span>
+                                <span>IP20</span>
+                            </li>
+                            <li>
+                                <span>Холодостойкость</span>
+                                <span>Нет</span>
+                            </li>
+                            <li>
+                                <span>Климатическое исполнение</span>
+                                <span>УХЛ4 по ГОСТ 15150-69</span>
+                            </li>
+                            <li>
+                                <span>Класс устойчивости к взлому</span>
+                                <span>U3 по ГОСТ Р 52582-2006</span>
+                            </li>
+                            <li>
+                                <span>Особенность</span>
+                                <span>Нет</span>
+                            </li>
+                            <li>
+                                <span>Бэксет</span>
+                                <span>Нет</span>
+                            </li>
+                            <li>
+                                <span>Длина присоединенного кабеля, м</span>
+                                <span>0,4</span>
+                            </li>
+                            <li>
+                                <span>Габаритные размеры замка длина, мм</span>
+                                <span>225</span>
+                            </li>
+                            <li>
+                                <span>Габаритные размеры замка ширина, мм</span>
+                                <span>42</span>
+                            </li>
+                            <li>
+                                <span>Габаритные размеры замка высота, мм</span>
+                                <span>26,5</span>
+                            </li>
+                            <li>
+                                <span>Габаритные размеры якоря длина, мм</span>
+                                <span>193</span>
+                            </li>
+                            <li>
+                                <span>Габаритные размеры якоря ширина, мм</span>
+                                <span>42</span>
+                            </li>
+                            <li>
+                                <span>Габаритные размеры якоря высота, мм</span>
+                                <span>14,5</span>
+                            </li>
+                            <li>
+                                <span>Вес (кг)</span>
+                                <span>3</span>
+                            </li>
+                            <li>
+                                <span>Длина уп-ки, мм</span>
+                                <span>250</span>
+                            </li>
+                            <li>
+                                <span>Ширина уп-ки, мм</span>
+                                <span>60</span>
+                            </li>
+                            <li>
+                                <span>Высота уп-ки, мм</span>
+                                <span>50</span>
                             </li>
                         </ul>
                         <button class="item-about__btn">Показать больше
@@ -218,7 +376,7 @@
                 <h2 class="title">Совместимость</h2>
                 <ul class="items-list">
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -226,12 +384,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -239,12 +395,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -252,12 +406,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -265,12 +417,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -278,12 +428,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -291,12 +439,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -304,12 +450,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
                     <li>
-                        <img class="items-img" src="../assets/images/new-1.png" alt="">
+                        <div class="items-wrapper"><img class="items-img" src="../assets/images/new-1.png" alt=""></div>
                         <h3 class="items-title">L-уголок AL-50FC</h3>
                         <div class="items-price">
                             <span>Розничная цена:</span>
@@ -317,12 +461,10 @@
                         </div>
                         <div class="items-statistic">
                             <a href="item.html">Подробнее</a>
-                            <div><img src="../assets/images/eye.svg" alt="">
-                                <img src="../assets/images/statistic.svg" alt=""></div>
                         </div>
                     </li>
-
                 </ul>
+
             </div>
             <a class="item-back" href="catalog.html">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -613,6 +755,8 @@
         </div>
     </div>
 </footer>
+<script src="../js/items.js"></script>
+<script src="../js/characteristic.js"></script>
 <script src="../js/footer.js"></script>
 </body>
 </html>

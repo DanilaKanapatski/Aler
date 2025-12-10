@@ -448,34 +448,34 @@
 
     /*information*/
 
-    .information-slider {
-        overflow: hidden;
-        /*padding-right: 10px;*/
-    }
-
-    .information-list li.swiper-slide {
-        width: auto;
-        margin-right: 10px; /* отступ между карточками */
-    }
-
     .information-list {
         margin-top: 20px;
         display: flex;
-        gap: 0;
         flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 10px;
+        scroll-snap-type: x mandatory;
+        -webkit-overflow-scrolling: touch;
     }
 
     .information-list img {
         max-height: 180px;
     }
 
+    .information-list::-webkit-scrollbar {
+        display: none;
+    }
+
     .information-list li {
-        /*max-width: none;*/
-        max-width: 260px !important;
+        max-width: 260px;
         width: 100%;
         height: 295px;
         padding-bottom: 20px;
-        flex-shrink: 0;
+    }
+
+    .information-list li {
+        flex: 0 0 260px; /* фиксированная ширина карточки */
+        scroll-snap-align: start;
     }
 
     .information-list li div {
