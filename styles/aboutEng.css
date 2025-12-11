@@ -1,0 +1,159 @@
+.info-title {
+    max-width: 1074px;
+}
+
+.info-list li {
+    max-width: 181px;
+}
+
+.about-desc {
+    max-width: 1203px;
+}
+
+.why-list li:first-child h3 {
+    max-width: 276px;
+}
+
+.why-list li:nth-child(3) p {
+    max-width: 276px;
+}
+
+.why-list li:nth-child(4) h3 {
+    max-width: 390px;
+}
+
+.why-list li:nth-child(4) p {
+    max-width: 488px;
+}
+
+.why-list li:nth-child(5) h3 {
+    max-width: 255px;
+}
+
+.why-list li:nth-child(5) {
+    padding: 25px 10px 30px 30px;
+}
+
+.why-list li:nth-child(6) {
+    padding: 25px 17px 30px 30px;
+}
+
+.team {
+    margin-top: 80px;
+}
+
+@media screen and (max-width: 1492px) {
+    .info-title {
+        max-width: 1074px;
+    }
+
+    .info-list li {
+        max-width: 193px;
+    }
+
+    .info-list li:last-child span {
+        max-width: 173px;
+    }
+
+    .about-desc {
+        max-width: 900px;
+    }
+
+    .why-list li:nth-child(4) h3 {
+        max-width: 232px;
+    }
+
+    .why-list li:nth-child(4) {
+        padding: 25px 10px 30px 30px;
+    }
+
+    .why-list li:nth-child(5) {
+        padding: 25px 6px 30px 30px;
+    }
+
+    .why-list li:nth-child(6) {
+        padding: 25px 15px 30px 30px;
+    }
+
+    .team {
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .info-title {
+        max-width: 700px;
+    }
+
+    .info-list li {
+        max-width: 150px;
+    }
+
+    .info-list li:nth-child(4) span {
+        max-width: 173px;
+    }
+
+    .about-desc {
+        max-width: 902px;
+    }
+
+    .why-list li:first-child h3 {
+        max-width: 238px;
+    }
+
+    .why-list li:first-child {
+        padding: 18px 12px 25px 18px;
+    }
+
+    .why-list li:nth-child(2) {
+        padding: 18px 16px 25px 18px;
+    }
+
+    .why-list li:nth-child(3) p {
+        max-width: 257px;
+    }
+
+    .why-list li:nth-child(4) {
+        padding: 18px 13px 25px 18px;
+    }
+
+    .why-list li:nth-child(4) h3 {
+        max-width: 209px;
+    }
+
+    .why-list li:nth-child(5) {
+        padding: 18px 13px 25px 18px;
+    }
+
+    .why-list li:nth-child(5) p {
+        max-width: 264px;
+    }
+
+    .why-list li:nth-child(6) {
+        padding: 18px 13px 25px 18px;
+    }
+
+    .team {
+        margin-top: 70px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .why-list li {
+        padding: 20px 22px 20px 20px;
+        height: auto !important;
+    }
+
+    .why-list li p {
+        max-width: none !important;
+    }
+
+    .why-list li h3 {
+        max-width: none !important;
+    }
+
+    .team {
+        margin-top: 50px;
+    }
+}

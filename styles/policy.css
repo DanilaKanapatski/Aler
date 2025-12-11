@@ -1,0 +1,124 @@
+.policy {
+    margin-bottom: 100px;
+}
+
+.policy-subtitle {
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 135%;
+    color: var(--black-text);
+}
+
+.policy .policy-subdesc {
+    margin-top: 35px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 135%;
+    color: var(--black-text);
+}
+
+.policy h4 {
+    margin-top: 25px;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 135%;
+    color: var(--black-text);
+}
+
+.policy .first-title {
+    margin-top: 10px;
+}
+
+.policy p {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 135%;
+    color: var(--black-text);
+    max-width: 1333px;
+}
+
+.policy p a {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 1492px) {
+
+    .policy p {
+        max-width: 1000px;
+    }
+
+    .policy .policy-subdesc {
+        margin-top: 25px;
+        font-size: 16px;
+    }
+
+}
+
+@media screen and (max-width: 1024px) {
+    .policy {
+        margin-bottom: 70px;
+    }
+
+    .policy-subtitle {
+        margin-top: 15px;
+        font-size: 22px;
+    }
+
+    .policy .policy-subdesc {
+        margin-top: 25px;
+        font-size: 14px;
+    }
+
+    .policy h4 {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .policy .first-title {
+        margin-top: 10px;
+    }
+
+    .policy p {
+        font-size: 16px;
+        max-width: 800px;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .policy {
+        margin-bottom: 50px;
+    }
+
+    .policy-subtitle {
+        margin-top: 20px;
+        font-size: 16px;
+    }
+
+    .policy .policy-subdesc {
+        margin-top: 20px;
+        font-weight: 500;
+        font-size: 12px;
+    }
+
+    .policy h4 {
+        margin-top: 20px;
+        font-size: 14px;
+    }
+
+    .policy .first-title {
+        margin-top: 10px;
+    }
+
+    .policy p {
+        margin-top: 7px;
+        font-size: 14px;
+        max-width: 700px;
+    }
+
+    .policy p a {
+        font-weight: 600;
+    }
+}

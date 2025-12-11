@@ -157,6 +157,7 @@
     padding: 25px 25px 30px 30px;
     border-radius: 15px;
     height: 226px;
+    width: 100%;
 }
 
 .why-list li:nth-child(even) h3 {
